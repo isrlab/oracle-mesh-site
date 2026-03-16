@@ -349,90 +349,126 @@ h3 {
 }
 
 .mesh-frame::after {
-  inset: auto 12% 14% auto;
-  width: 36%;
-  height: 36%;
-  border-radius: 50%;
-  border-color: rgba(126, 255, 201, 0.16);
+  inset: auto 8% 8% auto;
+  width: 26%;
+  height: 26%;
+  border-radius: 22px;
+  border-color: rgba(111, 232, 255, 0.12);
 }
 
-.ring,
-.pulse,
-.core-node {
+.systems-network {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
+  inset: 0;
 }
 
-.ring {
-  border: 1px solid rgba(118, 227, 255, 0.22);
-}
-
-.ring-a {
-  width: 62%;
-  height: 62%;
-}
-
-.ring-b {
-  width: 84%;
-  height: 84%;
-  border-color: rgba(137, 161, 255, 0.18);
-}
-
-.ring-c {
-  width: 104%;
-  height: 104%;
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-.core-node {
-  width: 1.15rem;
-  height: 1.15rem;
-  background: linear-gradient(135deg, var(--mint), var(--cyan));
-  box-shadow: 0 0 32px rgba(111, 232, 255, 0.45);
-}
-
-.pulse {
-  border: 1px solid rgba(255, 211, 109, 0.34);
-}
-
-.pulse-a {
-  width: 24%;
-  height: 24%;
-}
-
-.pulse-b {
-  width: 44%;
-  height: 44%;
-  border-color: rgba(126, 255, 201, 0.2);
-}
-
-.tag {
+.network-line {
   position: absolute;
-  padding: 0.45rem 0.65rem;
+  height: 1px;
+  transform-origin: left center;
+  background: linear-gradient(90deg, rgba(111, 232, 255, 0.12), rgba(111, 232, 255, 0.42), rgba(111, 232, 255, 0.12));
+}
+
+.line-a { width: 150px; left: 152px; top: 172px; transform: rotate(-30deg); }
+.line-b { width: 152px; left: 154px; top: 186px; transform: rotate(22deg); }
+.line-c { width: 122px; left: 148px; top: 198px; transform: rotate(95deg); }
+.line-d { width: 108px; left: 66px; top: 102px; transform: rotate(40deg); }
+.line-e { width: 140px; left: 260px; top: 96px; transform: rotate(126deg); }
+.line-f { width: 156px; left: 57px; top: 280px; transform: rotate(-12deg); }
+
+.network-node {
+  position: absolute;
+  border-radius: 14px;
+  border: 1px solid rgba(125, 176, 255, 0.24);
+  background: rgba(8, 16, 31, 0.88);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.26);
+  padding: 0.45rem 0.5rem;
+  color: var(--text);
+}
+
+.network-node .material-symbols-rounded {
+  font-size: 0.92rem;
+  vertical-align: middle;
+  color: var(--cyan);
+  margin-right: 0.2rem;
+}
+
+.network-node h4 {
+  margin: 0;
+  font-size: 0.64rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.network-node p {
+  margin: 0.16rem 0 0;
+  font-size: 0.56rem;
+  line-height: 1.25;
+  color: var(--text-dim);
+}
+
+.aircraft-node {
+  left: 140px;
+  top: 160px;
+  width: 154px;
+  border-color: rgba(111, 232, 255, 0.48);
+  background: rgba(8, 20, 38, 0.9);
+}
+
+.component-node {
+  width: 118px;
+}
+
+.engine-node { right: 24px; top: 88px; }
+.sensor-node { left: 14px; top: 86px; }
+.control-node { right: 18px; bottom: 92px; }
+
+.data-node {
+  width: 100px;
+  background: rgba(8, 16, 31, 0.8);
+}
+
+.data-a { left: 16px; top: 20px; }
+.data-b { right: 18px; top: 18px; }
+.data-c { left: 10px; top: 206px; }
+.data-d { right: 10px; top: 212px; }
+.data-e { left: 70px; bottom: 16px; width: 122px; }
+.data-f { right: 68px; bottom: 16px; width: 122px; }
+
+.edge-tag {
+  position: absolute;
+  padding: 0.28rem 0.5rem;
   border-radius: 999px;
-  background: rgba(9, 16, 31, 0.88);
-  border: 1px solid rgba(163, 184, 255, 0.14);
+  border: 1px solid rgba(111, 232, 255, 0.3);
+  background: rgba(6, 20, 38, 0.94);
   color: var(--text-soft);
-  font-size: 0.76rem;
-  backdrop-filter: blur(12px);
+  font-size: 0.54rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-.tag-a {
-  top: 16%;
-  right: 8%;
+.edge-tag-a { left: 168px; top: 122px; }
+.edge-tag-b { left: 162px; top: 238px; }
+.edge-tag-c { left: 28px; top: 160px; }
+
+@media (max-width: 1100px) {
+  .mesh-frame {
+    width: min(100%, 480px);
+  }
 }
 
-.tag-b {
-  bottom: 18%;
-  left: 10%;
-}
+@media (max-width: 980px) {
+  .network-node h4 {
+    font-size: 0.66rem;
+  }
 
-.tag-c {
-  bottom: 8%;
-  right: 12%;
+  .network-node p {
+    font-size: 0.58rem;
+  }
+
+  .aircraft-node {
+    left: 134px;
+  }
 }
 
 main {
