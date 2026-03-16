@@ -57,171 +57,194 @@
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="mesh-frame">
-          <svg class="hero-diagram" viewBox="0 0 760 760" role="img" aria-label="Clustered graph of Gaussian process subsystem surrogates and higher-level GP-of-GP clusters">
+          <svg class="hero-diagram" viewBox="0 0 760 760" role="img" aria-label="Graph neural network architecture with uncertainty distributions on graph edges">
             <defs>
-              <linearGradient id="edgeGlow" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0%" stop-color="#6fe8ff" stop-opacity="0.06" />
-                <stop offset="50%" stop-color="#6fe8ff" stop-opacity="0.85" />
-                <stop offset="100%" stop-color="#7cf8d3" stop-opacity="0.08" />
-              </linearGradient>
-              <linearGradient id="nodeFill" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stop-color="#112747" />
-                <stop offset="100%" stop-color="#0a1528" />
-              </linearGradient>
-              <linearGradient id="metaFill" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stop-color="#163764" />
-                <stop offset="100%" stop-color="#0d1b31" />
-              </linearGradient>
               <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="10" result="blur" />
+                <feGaussianBlur stdDeviation="8" result="blur" />
                 <feMerge>
                   <feMergeNode in="blur" />
                   <feMergeNode in="SourceGraphic" />
                 </feMerge>
               </filter>
-              <path id="kernelA" d="M0 11 C10 11, 16 3, 26 3 C36 3, 42 11, 52 11" />
-              <path id="kernelB" d="M0 11 C9 11, 16 6, 26 6 C36 6, 43 11, 52 11" />
-              <path id="flowTop" d="M380 146 C380 198, 380 248, 380 300" />
-              <path id="flowLeft" d="M250 292 C290 330, 326 352, 364 368" />
-              <path id="flowRight" d="M510 292 C470 330, 434 352, 396 368" />
-              <path id="flowBottom" d="M380 440 C380 490, 380 542, 380 606" />
+              <linearGradient id="panelGlow" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="rgba(17, 39, 71, 0.95)" />
+                <stop offset="100%" stop-color="rgba(10, 21, 40, 0.92)" />
+              </linearGradient>
+              <linearGradient id="edgeGlow" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0%" stop-color="#6fe8ff" stop-opacity="0.06" />
+                <stop offset="50%" stop-color="#6fe8ff" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#7cf8d3" stop-opacity="0.08" />
+              </linearGradient>
+              <path id="msg1" d="M196 232 C286 248, 328 292, 380 344" />
+              <path id="msg2" d="M196 380 C280 380, 326 378, 380 378" />
+              <path id="msg3" d="M196 528 C286 510, 328 470, 380 410" />
+              <path id="readout1" d="M444 346 C494 316, 548 284, 618 250" />
+              <path id="readout2" d="M444 378 C508 378, 560 378, 618 378" />
+              <path id="readout3" d="M444 410 C494 442, 548 472, 618 506" />
             </defs>
 
             <rect x="0" y="0" width="760" height="760" fill="transparent" />
-            <circle cx="380" cy="380" r="244" fill="none" stroke="rgba(125, 176, 255, 0.07)" stroke-width="1.4" />
-            <circle cx="380" cy="380" r="188" fill="none" stroke="rgba(111, 232, 255, 0.08)" stroke-width="1.1" stroke-dasharray="5 10" />
+            <rect x="66" y="144" width="164" height="476" rx="28" fill="url(#panelGlow)" stroke="rgba(125, 176, 255, 0.18)" />
+            <rect x="298" y="218" width="164" height="328" rx="30" fill="url(#panelGlow)" stroke="rgba(111, 232, 255, 0.22)" />
+            <rect x="530" y="164" width="164" height="436" rx="28" fill="url(#panelGlow)" stroke="rgba(125, 176, 255, 0.18)" />
 
-            <g fill="none" stroke-linecap="round">
-              <path d="M380 146 C380 198, 380 248, 380 300" stroke="url(#edgeGlow)" stroke-width="2.4" />
-              <path d="M250 292 C290 330, 326 352, 364 368" stroke="url(#edgeGlow)" stroke-width="2.4" />
-              <path d="M510 292 C470 330, 434 352, 396 368" stroke="url(#edgeGlow)" stroke-width="2.4" />
-              <path d="M380 440 C380 490, 380 542, 380 606" stroke="url(#edgeGlow)" stroke-width="2.4" />
-              <path d="M232 164 C268 184, 288 204, 300 236" stroke="rgba(124, 248, 211, 0.34)" stroke-width="1.5" stroke-dasharray="4 8" />
-              <path d="M530 168 C492 186, 474 204, 462 236" stroke="rgba(124, 248, 211, 0.34)" stroke-width="1.5" stroke-dasharray="4 8" />
-              <path d="M226 548 C274 536, 306 520, 326 488" stroke="rgba(124, 248, 211, 0.3)" stroke-width="1.4" stroke-dasharray="4 8" />
-              <path d="M534 548 C486 536, 454 520, 434 488" stroke="rgba(124, 248, 211, 0.3)" stroke-width="1.4" stroke-dasharray="4 8" />
+            <g fill="#7cf8d3" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1.6">
+              <text x="148" y="172" text-anchor="middle">SUBSYSTEM NODES</text>
+              <text x="380" y="246" text-anchor="middle">MESSAGE PASSING GNN</text>
+              <text x="612" y="192" text-anchor="middle">READOUT / DECISION</text>
+            </g>
+
+            <g fill="#8fb2e3" font-family="IBM Plex Mono, monospace" font-size="8.8">
+              <text x="148" y="188" text-anchor="middle">graph inputs with uncertain coupling</text>
+              <text x="380" y="262" text-anchor="middle">aggregation, update, latent propagation</text>
+              <text x="612" y="208" text-anchor="middle">belief state, control, risk outputs</text>
+            </g>
+
+            <g fill="none" stroke="rgba(145, 168, 210, 0.3)" stroke-width="1.8" stroke-linecap="round">
+              <path d="M124 232 L174 194 L196 266 L136 300 L124 232" />
+              <path d="M174 194 L196 266" />
+              <path d="M124 232 L196 266" />
+              <path d="M136 300 L196 266" />
+
+              <path d="M118 420 L174 382 L212 432 L160 482 L118 420" />
+              <path d="M174 382 L212 432" />
+              <path d="M174 382 L160 482" />
+              <path d="M118 420 L160 482" />
+
+              <path d="M128 566 L186 532 L210 592 L156 620 L128 566" />
+              <path d="M186 532 L210 592" />
+              <path d="M128 566 L210 592" />
+              <path d="M156 620 L186 532" />
+            </g>
+
+            <g fill="#0f1928" stroke="rgba(111, 232, 255, 0.35)" stroke-width="1.6">
+              <circle cx="124" cy="232" r="12" />
+              <circle cx="174" cy="194" r="12" />
+              <circle cx="196" cy="266" r="12" />
+              <circle cx="136" cy="300" r="12" />
+
+              <circle cx="118" cy="420" r="12" />
+              <circle cx="174" cy="382" r="12" />
+              <circle cx="212" cy="432" r="12" />
+              <circle cx="160" cy="482" r="12" />
+
+              <circle cx="128" cy="566" r="12" />
+              <circle cx="186" cy="532" r="12" />
+              <circle cx="210" cy="592" r="12" />
+              <circle cx="156" cy="620" r="12" />
+            </g>
+
+            <g fill="#eef5ff" font-family="IBM Plex Mono, monospace" font-size="8.5">
+              <text x="124" y="236" text-anchor="middle">GP</text>
+              <text x="174" y="198" text-anchor="middle">GP</text>
+              <text x="196" y="270" text-anchor="middle">GP</text>
+              <text x="136" y="304" text-anchor="middle">GP</text>
+              <text x="118" y="424" text-anchor="middle">GP</text>
+              <text x="174" y="386" text-anchor="middle">GP</text>
+              <text x="212" y="436" text-anchor="middle">GP</text>
+              <text x="160" y="486" text-anchor="middle">GP</text>
+              <text x="128" y="570" text-anchor="middle">GP</text>
+              <text x="186" y="536" text-anchor="middle">GP</text>
+              <text x="210" y="596" text-anchor="middle">GP</text>
+              <text x="156" y="624" text-anchor="middle">GP</text>
             </g>
 
             <g>
-              <rect x="278" y="84" width="204" height="84" rx="24" fill="url(#metaFill)" stroke="rgba(111, 232, 255, 0.62)" stroke-width="2.1" />
-              <text x="380" y="116" text-anchor="middle" fill="#eef5ff" font-size="14.5" font-weight="700" font-family="Sora, sans-serif" letter-spacing="1.4">MISSION-LEVEL GP</text>
-              <text x="380" y="139" text-anchor="middle" fill="#9ec5ff" font-size="10.5" font-family="IBM Plex Mono, monospace">GP over cluster surrogates</text>
-              <text x="380" y="154" text-anchor="middle" fill="#b8c9e8" font-size="9.4" font-family="IBM Plex Mono, monospace">belief fusion, tasking, cross-cluster coupling</text>
-            </g>
-
-            <g>
-              <rect x="298" y="308" width="164" height="132" rx="26" fill="url(#metaFill)" stroke="rgba(111, 232, 255, 0.58)" stroke-width="2.1" />
-              <circle cx="380" cy="374" r="78" fill="rgba(111, 232, 255, 0.08)" filter="url(#softGlow)">
-                <animate attributeName="r" values="74;80;74" dur="4.6s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.4;0.62;0.4" dur="4.6s" repeatCount="indefinite" />
+              <circle cx="380" cy="378" r="82" fill="rgba(111, 232, 255, 0.08)" filter="url(#softGlow)">
+                <animate attributeName="r" values="78;84;78" dur="4.6s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values="0.34;0.56;0.34" dur="4.6s" repeatCount="indefinite" />
               </circle>
-              <text x="380" y="354" text-anchor="middle" fill="#eef5ff" font-size="17" font-weight="700" font-family="Sora, sans-serif" letter-spacing="1.8">GP MESH</text>
-              <text x="380" y="380" text-anchor="middle" fill="#9ec5ff" font-size="11" font-family="IBM Plex Mono, monospace">graph of subsystem surrogates</text>
-              <text x="380" y="402" text-anchor="middle" fill="#b8c9e8" font-size="10" font-family="IBM Plex Mono, monospace">GPs inside clusters, clusters inside a GP</text>
+              <circle cx="380" cy="318" r="18" fill="#10233f" stroke="rgba(111, 232, 255, 0.45)" stroke-width="1.8" />
+              <circle cx="344" cy="378" r="18" fill="#10233f" stroke="rgba(111, 232, 255, 0.45)" stroke-width="1.8" />
+              <circle cx="416" cy="378" r="18" fill="#10233f" stroke="rgba(111, 232, 255, 0.45)" stroke-width="1.8" />
+              <circle cx="380" cy="438" r="18" fill="#10233f" stroke="rgba(111, 232, 255, 0.45)" stroke-width="1.8" />
+              <path d="M380 318 L344 378 L416 378 L380 438 Z" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
+              <path d="M344 378 L380 438" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
+              <path d="M416 378 L380 438" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
+              <text x="380" y="322" text-anchor="middle" fill="#eef5ff" font-size="8.5" font-family="IBM Plex Mono, monospace">MP</text>
+              <text x="344" y="382" text-anchor="middle" fill="#eef5ff" font-size="8.5" font-family="IBM Plex Mono, monospace">AGG</text>
+              <text x="416" y="382" text-anchor="middle" fill="#eef5ff" font-size="8.5" font-family="IBM Plex Mono, monospace">UPD</text>
+              <text x="380" y="442" text-anchor="middle" fill="#eef5ff" font-size="8.5" font-family="IBM Plex Mono, monospace">LAT</text>
+            </g>
+
+            <g fill="none" stroke="url(#edgeGlow)" stroke-width="2.25" stroke-linecap="round">
+              <path d="M196 232 C286 248, 328 292, 380 344" />
+              <path d="M196 380 C280 380, 326 378, 380 378" />
+              <path d="M196 528 C286 510, 328 470, 380 410" />
+              <path d="M444 346 C494 316, 548 284, 618 250" />
+              <path d="M444 378 C508 378, 560 378, 618 378" />
+              <path d="M444 410 C494 442, 548 472, 618 506" />
             </g>
 
             <g>
-              <rect x="112" y="206" width="208" height="164" rx="28" fill="rgba(7, 20, 38, 0.5)" stroke="rgba(124, 248, 211, 0.22)" stroke-width="1.5" />
-              <text x="216" y="234" text-anchor="middle" fill="#7cf8d3" font-size="11" font-family="IBM Plex Mono, monospace" letter-spacing="1.6">PROPULSION CLUSTER</text>
-              <text x="216" y="252" text-anchor="middle" fill="#8fb2e3" font-size="8.7" font-family="IBM Plex Mono, monospace">meta GP over engine, inlet, thermal states</text>
-              <rect x="148" y="274" width="92" height="44" rx="14" fill="url(#nodeFill)" stroke="rgba(125, 176, 255, 0.28)" />
-              <rect x="202" y="316" width="92" height="44" rx="14" fill="url(#nodeFill)" stroke="rgba(125, 176, 255, 0.28)" />
-              <rect x="126" y="318" width="68" height="40" rx="13" fill="url(#metaFill)" stroke="rgba(111, 232, 255, 0.34)" />
-              <text x="194" y="292" text-anchor="middle" fill="#eef5ff" font-size="10" font-family="Sora, sans-serif" font-weight="600">Engine GP</text>
-              <text x="248" y="343" text-anchor="middle" fill="#eef5ff" font-size="10" font-family="Sora, sans-serif" font-weight="600">Thermal GP</text>
-              <text x="160" y="342" text-anchor="middle" fill="#eef5ff" font-size="9.5" font-family="Sora, sans-serif" font-weight="600">Cluster GP</text>
-              <g transform="translate(170 302)">
-                <path d="M0 11 H52" fill="none" stroke="rgba(184, 201, 232, 0.28)" stroke-width="1" />
-                <use href="#kernelA" fill="none" stroke="#6fe8ff" stroke-width="1.6" />
+              <g transform="translate(252 270)">
+                <rect x="-34" y="-17" width="68" height="34" rx="10" fill="rgba(6, 20, 38, 0.95)" stroke="rgba(111, 232, 255, 0.26)" />
+                <path d="M-23 8 H23" fill="none" stroke="rgba(184, 201, 232, 0.34)" stroke-width="1" />
+                <path d="M-20 8 C-10 8, -6 -5, 0 -5 C6 -5, 10 8, 20 8" fill="none" stroke="#6fe8ff" stroke-width="1.7" />
+                <text x="0" y="-6" text-anchor="middle" fill="#b8c9e8" font-size="7.8" font-family="IBM Plex Mono, monospace">p(e1)</text>
               </g>
-              <g transform="translate(225 344)">
-                <path d="M0 11 H52" fill="none" stroke="rgba(184, 201, 232, 0.28)" stroke-width="1" />
-                <use href="#kernelB" fill="none" stroke="#7cf8d3" stroke-width="1.6" />
+              <g transform="translate(258 378)">
+                <rect x="-34" y="-17" width="68" height="34" rx="10" fill="rgba(6, 20, 38, 0.95)" stroke="rgba(111, 232, 255, 0.26)" />
+                <path d="M-23 8 H23" fill="none" stroke="rgba(184, 201, 232, 0.34)" stroke-width="1" />
+                <path d="M-20 8 C-11 8, -7 -1, 0 -1 C7 -1, 11 8, 20 8" fill="none" stroke="#7cf8d3" stroke-width="1.7" />
+                <text x="0" y="-6" text-anchor="middle" fill="#b8c9e8" font-size="7.8" font-family="IBM Plex Mono, monospace">p(e2)</text>
               </g>
-            </g>
-
-            <g>
-              <rect x="440" y="206" width="208" height="164" rx="28" fill="rgba(7, 20, 38, 0.5)" stroke="rgba(124, 248, 211, 0.22)" stroke-width="1.5" />
-              <text x="544" y="234" text-anchor="middle" fill="#7cf8d3" font-size="11" font-family="IBM Plex Mono, monospace" letter-spacing="1.6">GUIDANCE CLUSTER</text>
-              <text x="544" y="252" text-anchor="middle" fill="#8fb2e3" font-size="8.7" font-family="IBM Plex Mono, monospace">meta GP over navigation, controls, planning</text>
-              <rect x="474" y="274" width="92" height="44" rx="14" fill="url(#nodeFill)" stroke="rgba(125, 176, 255, 0.28)" />
-              <rect x="528" y="318" width="92" height="44" rx="14" fill="url(#nodeFill)" stroke="rgba(125, 176, 255, 0.28)" />
-              <rect x="584" y="270" width="52" height="88" rx="13" fill="url(#metaFill)" stroke="rgba(111, 232, 255, 0.34)" />
-              <text x="520" y="292" text-anchor="middle" fill="#eef5ff" font-size="10" font-family="Sora, sans-serif" font-weight="600">Control GP</text>
-              <text x="574" y="344" text-anchor="middle" fill="#eef5ff" font-size="10" font-family="Sora, sans-serif" font-weight="600">Nav GP</text>
-              <text x="610" y="307" text-anchor="middle" fill="#eef5ff" font-size="9.2" font-family="Sora, sans-serif" font-weight="600">Cluster</text>
-              <text x="610" y="320" text-anchor="middle" fill="#eef5ff" font-size="9.2" font-family="Sora, sans-serif" font-weight="600">GP</text>
-              <g transform="translate(496 302)">
-                <path d="M0 11 H52" fill="none" stroke="rgba(184, 201, 232, 0.28)" stroke-width="1" />
-                <use href="#kernelA" fill="none" stroke="#6fe8ff" stroke-width="1.6" />
+              <g transform="translate(254 486)">
+                <rect x="-34" y="-17" width="68" height="34" rx="10" fill="rgba(6, 20, 38, 0.95)" stroke="rgba(111, 232, 255, 0.26)" />
+                <path d="M-23 8 H23" fill="none" stroke="rgba(184, 201, 232, 0.34)" stroke-width="1" />
+                <path d="M-20 8 C-12 8, -8 -7, 0 -7 C8 -7, 12 8, 20 8" fill="none" stroke="#8eb2ff" stroke-width="1.7" />
+                <text x="0" y="-6" text-anchor="middle" fill="#b8c9e8" font-size="7.8" font-family="IBM Plex Mono, monospace">p(e3)</text>
               </g>
-              <g transform="translate(550 344)">
-                <path d="M0 11 H52" fill="none" stroke="rgba(184, 201, 232, 0.28)" stroke-width="1" />
-                <use href="#kernelB" fill="none" stroke="#7cf8d3" stroke-width="1.6" />
+              <g transform="translate(530 302)">
+                <rect x="-34" y="-17" width="68" height="34" rx="10" fill="rgba(6, 20, 38, 0.95)" stroke="rgba(111, 232, 255, 0.26)" />
+                <path d="M-23 8 H23" fill="none" stroke="rgba(184, 201, 232, 0.34)" stroke-width="1" />
+                <path d="M-20 8 C-10 8, -6 -3, 0 -3 C6 -3, 10 8, 20 8" fill="none" stroke="#6fe8ff" stroke-width="1.7" />
+                <text x="0" y="-6" text-anchor="middle" fill="#b8c9e8" font-size="7.8" font-family="IBM Plex Mono, monospace">p(e4)</text>
+              </g>
+              <g transform="translate(530 378)">
+                <rect x="-34" y="-17" width="68" height="34" rx="10" fill="rgba(6, 20, 38, 0.95)" stroke="rgba(111, 232, 255, 0.26)" />
+                <path d="M-23 8 H23" fill="none" stroke="rgba(184, 201, 232, 0.34)" stroke-width="1" />
+                <path d="M-20 8 C-11 8, -7 0, 0 0 C7 0, 11 8, 20 8" fill="none" stroke="#7cf8d3" stroke-width="1.7" />
+                <text x="0" y="-6" text-anchor="middle" fill="#b8c9e8" font-size="7.8" font-family="IBM Plex Mono, monospace">p(e5)</text>
+              </g>
+              <g transform="translate(530 454)">
+                <rect x="-34" y="-17" width="68" height="34" rx="10" fill="rgba(6, 20, 38, 0.95)" stroke="rgba(111, 232, 255, 0.26)" />
+                <path d="M-23 8 H23" fill="none" stroke="rgba(184, 201, 232, 0.34)" stroke-width="1" />
+                <path d="M-20 8 C-12 8, -8 -6, 0 -6 C8 -6, 12 8, 20 8" fill="none" stroke="#8eb2ff" stroke-width="1.7" />
+                <text x="0" y="-6" text-anchor="middle" fill="#b8c9e8" font-size="7.8" font-family="IBM Plex Mono, monospace">p(e6)</text>
               </g>
             </g>
 
-            <g>
-              <rect x="116" y="474" width="208" height="164" rx="28" fill="rgba(7, 20, 38, 0.5)" stroke="rgba(124, 248, 211, 0.22)" stroke-width="1.5" />
-              <text x="220" y="502" text-anchor="middle" fill="#7cf8d3" font-size="11" font-family="IBM Plex Mono, monospace" letter-spacing="1.6">AEROSTRUCTURE CLUSTER</text>
-              <text x="220" y="520" text-anchor="middle" fill="#8fb2e3" font-size="8.7" font-family="IBM Plex Mono, monospace">meta GP over loads, flow, and deformation</text>
-              <rect x="148" y="544" width="96" height="44" rx="14" fill="url(#nodeFill)" stroke="rgba(125, 176, 255, 0.28)" />
-              <rect x="214" y="584" width="94" height="44" rx="14" fill="url(#nodeFill)" stroke="rgba(125, 176, 255, 0.28)" />
-              <rect x="132" y="592" width="68" height="40" rx="13" fill="url(#metaFill)" stroke="rgba(111, 232, 255, 0.34)" />
-              <text x="196" y="570" text-anchor="middle" fill="#eef5ff" font-size="10" font-family="Sora, sans-serif" font-weight="600">Flow GP</text>
-              <text x="261" y="610" text-anchor="middle" fill="#eef5ff" font-size="10" font-family="Sora, sans-serif" font-weight="600">Loads GP</text>
-              <text x="166" y="616" text-anchor="middle" fill="#eef5ff" font-size="9.5" font-family="Sora, sans-serif" font-weight="600">Cluster GP</text>
-              <g transform="translate(170 572)">
-                <path d="M0 11 H52" fill="none" stroke="rgba(184, 201, 232, 0.28)" stroke-width="1" />
-                <use href="#kernelA" fill="none" stroke="#8eb2ff" stroke-width="1.6" />
-              </g>
-              <g transform="translate(239 612)">
-                <path d="M0 11 H52" fill="none" stroke="rgba(184, 201, 232, 0.28)" stroke-width="1" />
-                <use href="#kernelB" fill="none" stroke="#7cf8d3" stroke-width="1.6" />
-              </g>
+            <g fill="#0f1928" stroke="rgba(111, 232, 255, 0.35)" stroke-width="1.7">
+              <rect x="594" y="228" width="48" height="44" rx="13" />
+              <rect x="588" y="356" width="60" height="44" rx="13" />
+              <rect x="594" y="484" width="48" height="44" rx="13" />
             </g>
 
-            <g>
-              <rect x="438" y="474" width="208" height="164" rx="28" fill="rgba(7, 20, 38, 0.5)" stroke="rgba(124, 248, 211, 0.22)" stroke-width="1.5" />
-              <text x="542" y="502" text-anchor="middle" fill="#7cf8d3" font-size="11" font-family="IBM Plex Mono, monospace" letter-spacing="1.6">SENSING CLUSTER</text>
-              <text x="542" y="520" text-anchor="middle" fill="#8fb2e3" font-size="8.7" font-family="IBM Plex Mono, monospace">meta GP over radar, IMU, and fusion residuals</text>
-              <rect x="470" y="546" width="86" height="44" rx="14" fill="url(#nodeFill)" stroke="rgba(125, 176, 255, 0.28)" />
-              <rect x="530" y="586" width="94" height="44" rx="14" fill="url(#nodeFill)" stroke="rgba(125, 176, 255, 0.28)" />
-              <rect x="582" y="540" width="48" height="82" rx="13" fill="url(#metaFill)" stroke="rgba(111, 232, 255, 0.34)" />
-              <text x="513" y="572" text-anchor="middle" fill="#eef5ff" font-size="10" font-family="Sora, sans-serif" font-weight="600">Radar GP</text>
-              <text x="577" y="612" text-anchor="middle" fill="#eef5ff" font-size="10" font-family="Sora, sans-serif" font-weight="600">Fusion GP</text>
-              <text x="606" y="572" text-anchor="middle" fill="#eef5ff" font-size="9.2" font-family="Sora, sans-serif" font-weight="600">Cluster</text>
-              <text x="606" y="585" text-anchor="middle" fill="#eef5ff" font-size="9.2" font-family="Sora, sans-serif" font-weight="600">GP</text>
-              <g transform="translate(492 574)">
-                <path d="M0 11 H52" fill="none" stroke="rgba(184, 201, 232, 0.28)" stroke-width="1" />
-                <use href="#kernelA" fill="none" stroke="#6fe8ff" stroke-width="1.6" />
-              </g>
-              <g transform="translate(550 614)">
-                <path d="M0 11 H52" fill="none" stroke="rgba(184, 201, 232, 0.28)" stroke-width="1" />
-                <use href="#kernelB" fill="none" stroke="#8eb2ff" stroke-width="1.6" />
-              </g>
+            <g fill="#eef5ff" font-family="IBM Plex Mono, monospace" font-size="8.4">
+              <text x="618" y="254" text-anchor="middle">risk</text>
+              <text x="618" y="382" text-anchor="middle">policy</text>
+              <text x="618" y="510" text-anchor="middle">control</text>
             </g>
 
             <g fill="rgba(111, 232, 255, 0.96)" filter="url(#softGlow)">
-              <circle r="3.4">
-                <animateMotion dur="6.8s" repeatCount="indefinite" rotate="auto">
-                  <mpath href="#flowTop" />
-                </animateMotion>
+              <circle r="3.3">
+                <animateMotion dur="6.2s" repeatCount="indefinite" rotate="auto"><mpath href="#msg1" /></animateMotion>
               </circle>
-              <circle r="3.2" fill="#7cf8d3">
-                <animateMotion dur="7.2s" repeatCount="indefinite" rotate="auto">
-                  <mpath href="#flowLeft" />
-                </animateMotion>
+              <circle r="3.3" fill="#7cf8d3">
+                <animateMotion dur="6.8s" repeatCount="indefinite" rotate="auto"><mpath href="#msg2" /></animateMotion>
               </circle>
-              <circle r="3.2" fill="#7cf8d3">
-                <animateMotion dur="6.6s" repeatCount="indefinite" rotate="auto">
-                  <mpath href="#flowRight" />
-                </animateMotion>
+              <circle r="3.3" fill="#8eb2ff">
+                <animateMotion dur="7.3s" repeatCount="indefinite" rotate="auto"><mpath href="#msg3" /></animateMotion>
               </circle>
-              <circle r="3.4" fill="#8eb2ff">
-                <animateMotion dur="7.5s" repeatCount="indefinite" rotate="auto">
-                  <mpath href="#flowBottom" />
-                </animateMotion>
+              <circle r="3.1">
+                <animateMotion dur="6.5s" repeatCount="indefinite" rotate="auto"><mpath href="#readout1" /></animateMotion>
+              </circle>
+              <circle r="3.1" fill="#7cf8d3">
+                <animateMotion dur="6.9s" repeatCount="indefinite" rotate="auto"><mpath href="#readout2" /></animateMotion>
+              </circle>
+              <circle r="3.1" fill="#8eb2ff">
+                <animateMotion dur="7.1s" repeatCount="indefinite" rotate="auto"><mpath href="#readout3" /></animateMotion>
               </circle>
             </g>
           </svg>
