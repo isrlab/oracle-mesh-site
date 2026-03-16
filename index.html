@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ORACLE-MESH</title>
+    <title>ORION</title>
     <meta
       name="description"
-      content="ORACLE-MESH supports real-time decision making in the presence of uncertainty."
+      content="ORION: Online Robust Inference and Optimization for Networks. A distributed multiscale decision engine for real-time edge intelligence under uncertainty."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -25,34 +25,35 @@
     <div class="aurora aurora-right"></div>
     <div class="grain"></div>
     <nav class="top-nav" aria-label="Primary">
-      <a class="nav-link active" href="index.html"><span class="material-symbols-rounded nav-icon">home</span>Home</a>
-      <a class="nav-link" href="tools.html"><span class="material-symbols-rounded nav-icon">deployed_code</span>Tools</a>
-      <a class="nav-link" href="visualizations.html"><span class="material-symbols-rounded nav-icon">monitoring</span>Visualizations</a>
-      <a class="nav-link" href="docs.html"><span class="material-symbols-rounded nav-icon">menu_book</span>Docs</a>
-      <a class="nav-link" href="architecture.html"><span class="material-symbols-rounded nav-icon">account_tree</span>Architecture</a>
-      <a class="nav-link" href="about.html"><span class="material-symbols-rounded nav-icon">groups</span>About</a>
+      <a class="nav-brand" href="index.html">
+        <span class="material-symbols-rounded nav-brand-icon">deployed_code</span>
+        <span class="nav-brand-copy">
+          <span class="nav-brand-title">ORION</span>
+          <span class="nav-brand-subtitle">ONLINE ROBUST INFERENCE AND OPTIMIZATION FOR NETWORKS</span>
+        </span>
+      </a>
+      <div class="nav-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="research.html">Research</a>
+        <a class="nav-link" href="about.html">About</a>
+      </div>
     </nav>
     <header class="hero">
       <div class="hero-copy">
-        <p class="badge">ORACLE-MESH</p>
-        <p class="expansion">Real-time decision making in the presence of uncertainty</p>
-        <h1>Real-time decision making in the presence of uncertainty.</h1>
+        <p class="badge">ORION</p>
+        <p class="expansion">Online Robust Inference and Optimization for Networks</p>
+        <h1>
+          Distributed <span class="headline-accent">Reasoning Agents</span><br />
+          for Real-Time Edge Decisions
+        </h1>
         <p class="lede">
-          ORACLE-MESH delivers real-time decision support under uncertainty for
-          multi-fidelity modeling, lean digital twins, and online orchestration
-          in compute-constrained settings.
+          ORION coordinates networked reasoning agents that assimilate information across
+          sensors, models, and operating scales to produce time-critical inference,
+          optimization, and decision support on edge devices.
         </p>
-        <div class="signal-row">
-          <span>Multi-fidelity UQ</span>
-          <span>Decision support</span>
-          <span>Lean digital twins</span>
-          <span>Edge-resident inference</span>
-          <span>Computational agents</span>
-        </div>
         <div class="cta-row">
-          <a class="button primary" href="#mission">Use Cases</a>
-          <a class="button" href="tools.html">Research Tools</a>
-          <a class="button" href="visualizations.html">Interactive Visuals</a>
+          <a class="button primary" href="#mission">Explore Mission Profile</a>
+          <a class="button" href="about.html">Meet the Team</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
@@ -88,13 +89,13 @@
             <rect x="300" y="228" width="160" height="292" rx="30" fill="url(#panelGlow)" stroke="rgba(111, 232, 255, 0.22)" />
             <rect x="532" y="176" width="154" height="388" rx="28" fill="url(#panelGlow)" stroke="rgba(125, 176, 255, 0.18)" />
 
-            <g fill="#7cf8d3" font-family="IBM Plex Mono, monospace" font-size="9.8" letter-spacing="1.4">
+            <g fill="#7cf8d3" font-family="Space Grotesk, sans-serif" font-size="9.8" letter-spacing="1.4">
               <text x="153" y="176" text-anchor="middle">SUBSYSTEM NODES</text>
               <text x="380" y="254" text-anchor="middle">MESSAGE PASSING GNN</text>
               <text x="609" y="200" text-anchor="middle">READOUT / DECISION</text>
             </g>
 
-            <g fill="#8fb2e3" font-family="IBM Plex Mono, monospace" font-size="7.8">
+            <g fill="#8fb2e3" font-family="Space Grotesk, sans-serif" font-size="7.8">
               <text x="153" y="190" text-anchor="middle">uncertain graph inputs</text>
               <text x="380" y="268" text-anchor="middle">aggregate, update, propagate</text>
               <text x="609" y="214" text-anchor="middle">belief and control outputs</text>
@@ -134,7 +135,7 @@
               <circle cx="156" cy="602" r="12" />
             </g>
 
-            <g fill="#eef5ff" font-family="IBM Plex Mono, monospace" font-size="8.5">
+            <g fill="#eef5ff" font-family="Space Grotesk, sans-serif" font-size="8.5">
               <text x="124" y="236" text-anchor="middle">GP</text>
               <text x="174" y="198" text-anchor="middle">GP</text>
               <text x="196" y="270" text-anchor="middle">GP</text>
@@ -161,10 +162,10 @@
               <path d="M380 324 L346 376 L414 376 L380 428 Z" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
               <path d="M346 376 L380 428" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
               <path d="M414 376 L380 428" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
-              <text x="380" y="328" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="IBM Plex Mono, monospace">MP</text>
-              <text x="346" y="380" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="IBM Plex Mono, monospace">AGG</text>
-              <text x="414" y="380" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="IBM Plex Mono, monospace">UPD</text>
-              <text x="380" y="432" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="IBM Plex Mono, monospace">LAT</text>
+              <text x="380" y="328" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="Space Grotesk, sans-serif">MP</text>
+              <text x="346" y="380" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="Space Grotesk, sans-serif">AGG</text>
+              <text x="414" y="380" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="Space Grotesk, sans-serif">UPD</text>
+              <text x="380" y="432" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="Space Grotesk, sans-serif">LAT</text>
             </g>
 
             <g fill="none" stroke="url(#edgeGlow)" stroke-width="2.25" stroke-linecap="round">
@@ -217,7 +218,7 @@
               <rect x="590" y="482" width="44" height="40" rx="12" />
             </g>
 
-            <g fill="#eef5ff" font-family="IBM Plex Mono, monospace" font-size="7.8">
+            <g fill="#eef5ff" font-family="Space Grotesk, sans-serif" font-size="7.8">
               <text x="612" y="256" text-anchor="middle">risk</text>
               <text x="612" y="382" text-anchor="middle">policy</text>
               <text x="612" y="506" text-anchor="middle">control</text>
@@ -249,70 +250,43 @@
     </header>
 
     <main>
-      <section class="portal-grid">
-        <a class="portal-card" href="tools.html">
-          <p class="card-index">01</p>
-          <svg class="micro-icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#icon-network"></use></svg>
-          <h3>Research tools</h3>
-          <p>Explore modules for probabilistic modeling, adaptive state reasoning, mission planning analytics, and data-driven orchestration.</p>
-        </a>
-        <a class="portal-card" href="docs.html">
-          <p class="card-index">02</p>
-          <svg class="micro-icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#icon-docs"></use></svg>
-          <h3>Documentation</h3>
-          <p>Read system guides, API conventions, and integration paths for mission intelligence workflows.</p>
-        </a>
-        <a class="portal-card" href="visualizations.html">
-          <p class="card-index">03</p>
-          <svg class="micro-icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#icon-viz"></use></svg>
-          <h3>Interactive visualizations</h3>
-          <p>Inspect uncertainty flow, mission branch behavior, and adaptive state transitions under changing operating conditions.</p>
-        </a>
-        <a class="portal-card" href="architecture.html">
-          <p class="card-index">04</p>
-          <svg class="micro-icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#icon-arch"></use></svg>
-          <h3>Architecture</h3>
-          <p>Review website architecture, folder structure, technology stack, and roadmap for the research software portal.</p>
-        </a>
-      </section>
-
       <section class="panel mission" id="mission">
         <div>
           <p class="section-kicker">Mission profile</p>
-          <h2>Designed for uncertainty-aware operations.</h2>
+          <h2>Built for multiscale decisions under uncertainty.</h2>
         </div>
         <p>
-          The platform links model hierarchies, sparse observations, and agent-mediated
-          control into a unified decision framework. It is intended for settings where
-          uncertainty must be propagated explicitly across offline design studies,
-          operational digital twins, and online coordination loops running under edge
-          compute and communications constraints.
+          The platform links distributed reasoning agents, sparse observations, and
+          multiscale model hierarchies into a unified decision loop. It is intended for
+          settings where information must be assimilated rapidly, uncertainty must be
+          propagated explicitly, and prediction or action must remain available on edge
+          devices operating under compute, bandwidth, and timing constraints.
         </p>
       </section>
 
       <section class="grid use-cases">
         <article class="card">
           <p class="card-index">01</p>
-          <h3>Multi-fidelity model integration</h3>
+          <h3>Multiscale information assimilation</h3>
           <p>
-            Combine high-cost and reduced-order models into calibrated uncertainty
-            representations that remain useful during design, deployment, and retuning.
+            Fuse heterogeneous observations, surrogates, and model hierarchies into a
+            coherent state estimate that remains actionable as conditions shift.
           </p>
         </article>
         <article class="card">
           <p class="card-index">02</p>
-          <h3>Agent-mediated decision loops</h3>
+          <h3>Cooperative reasoning agents</h3>
           <p>
-            Support intervention and coordination logic with computational agents that act
-            on calibrated belief state rather than nominal prediction alone.
+            Coordinate specialized agents that exchange beliefs, reconcile local context,
+            and support time-critical decisions from the edge to the system level.
           </p>
         </article>
         <article class="card">
           <p class="card-index">03</p>
-          <h3>Edge-capable uncertainty quantification</h3>
+          <h3>Real-time edge prediction</h3>
           <p>
-            Place uncertainty-aware inference near the sensor, platform, or vehicle where
-            local decisions must be made under constrained compute and intermittent links.
+            Push uncertainty-aware inference and decision support onto edge hardware where
+            latency, resilience, and intermittent communications cannot be ignored.
           </p>
         </article>
       </section>
@@ -320,35 +294,36 @@
       <section class="mode-grid" id="modes">
         <article class="mode-panel">
           <p class="section-kicker">Offline design</p>
-          <h2>Interrogate the design space before deployment.</h2>
+          <h2>Shape the multiscale reasoning architecture before deployment.</h2>
           <p>
-            Use ORACLE-MESH to explore design envelopes, propagate uncertainty through reduced
-            representations, and determine where additional model fidelity materially changes
-            the resulting decision surface.
+            Use ORION to identify the right hierarchy of models, sensing placements, and
+            agent responsibilities, then determine where added fidelity materially changes
+            the decision surface.
           </p>
         </article>
         <article class="mode-panel alt">
           <p class="section-kicker">Online orchestration</p>
-          <h2>Maintain adaptation as the operating picture shifts.</h2>
+          <h2>Maintain adaptation as edge conditions evolve in real time.</h2>
           <p>
-            Run live assimilation and orchestration loops that coordinate observations,
-            surrogate updates, edge-resident uncertainty models, and intervention logic when
-            timing, bandwidth, and trust constraints cannot be ignored.
+            Run live assimilation and orchestration loops that coordinate distributed
+            observations, local inference, agent-to-agent messaging, and edge-resident
+            control or recommendation logic when timing, bandwidth, and trust constraints
+            cannot be ignored.
           </p>
         </article>
       </section>
 
       <section class="panel manifesto">
         <div class="manifesto-line">
-          <span>Calibrated uncertainty</span>
-          <span>Distributed decision support</span>
-          <span>Edge-resident inference</span>
+          <span>Distributed reasoning agents</span>
+          <span>Multiscale assimilation</span>
+          <span>Edge-resident decisions</span>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>ORACLE-MESH</p>
+      <p>ORION</p>
     </footer>
     <script src="assets/js/ui-effects.js"></script>
   </body>
