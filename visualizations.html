@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizations | ORACLE-MESH</title>
+    <meta
+      name="description"
+      content="Interactive visualizations for uncertainty diffusion, tactical options trees, and GP-FSM state flow in ORACLE-MESH."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-left"></div>
+    <div class="aurora aurora-right"></div>
+    <div class="grain"></div>
+
+    <nav class="top-nav" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="tools.html">Tools</a>
+      <a class="nav-link active" href="visualizations.html">Visualizations</a>
+      <a class="nav-link" href="docs.html">Docs</a>
+      <a class="nav-link" href="architecture.html">Architecture</a>
+      <a class="nav-link" href="about.html">About</a>
+    </nav>
+
+    <header class="page-hero">
+      <p class="badge">Interactive Lab</p>
+      <h1>Uncertainty and policy dynamics</h1>
+      <p class="lede">
+        Explore how uncertainty spreads across mission graphs, how finite states evolve,
+        and how tactical options branch under changing confidence.
+      </p>
+    </header>
+
+    <main>
+      <section class="viz-grid">
+        <article class="panel">
+          <p class="section-kicker">Graph diffusion</p>
+          <h2>Uncertainty propagation on a mission graph</h2>
+          <canvas id="diffusionCanvas" width="560" height="320" aria-label="Graph uncertainty diffusion demo"></canvas>
+          <p class="viz-caption">Node intensity indicates uncertainty mass after each diffusion step.</p>
+        </article>
+
+        <article class="panel">
+          <p class="section-kicker">GP-FSM</p>
+          <h2>Finite-state mission mode transitions</h2>
+          <canvas id="fsmCanvas" width="560" height="320" aria-label="GP-FSM transition demo"></canvas>
+          <p class="viz-caption">Transition emphasis shifts as confidence and mission pressure vary.</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <p class="section-kicker">Tactical options tree</p>
+        <h2>Branching policy candidates under uncertainty</h2>
+        <div id="optionsTree" class="options-tree" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>ORACLE-MESH</p>
+    </footer>
+
+    <script src="assets/js/visualizations.js"></script>
+  </body>
+</html>
