@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORACLE-MESH</title>
+    <meta
+      name="description"
+      content="ORACLE-MESH is a benchmark-first platform for uncertainty-aware GP inference over networked data streams."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <p class="badge">ORACLE-MESH</p>
+      <h1>Networked Uncertainty Inference at Operational Tempo</h1>
+      <p class="lede">
+        A benchmark-first framework for selecting scalable Gaussian Process backends
+        (JAX or PyTorch) under calibrated uncertainty, latency pressure, and
+        multi-node assimilation constraints.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="https://github.com/isrlab/oracle-mesh">Repository</a>
+        <a class="button" href="https://github.com/isrlab/oracle-mesh/tree/main/docs/benchmark">Benchmark Docs</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>Core Mission</h2>
+        <p>
+          ORACLE-MESH evaluates and operationalizes uncertainty-aware inference pipelines
+          that maintain calibration while trading off speed and fidelity.
+        </p>
+        <ul>
+          <li>Canonical spring-mass-damper benchmark with parametric uncertainty</li>
+          <li>Parity runners for JAX and PyTorch tracks</li>
+          <li>Weighted decision matrix for backend selection</li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h3>01. Benchmark Contract</h3>
+          <p>
+            Fixed seeds, reproducible splits, and mandatory calibration and latency metrics.
+          </p>
+        </article>
+        <article class="card">
+          <h3>02. Dual-Track Execution</h3>
+          <p>
+            Side-by-side implementation paths for tinygp or GPJax and GPyTorch.
+          </p>
+        </article>
+        <article class="card">
+          <h3>03. Decision Gates</h3>
+          <p>
+            No backend wins unless it passes uncertainty, stability, and runtime gates.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>ORACLE-MESH, ISRLab</p>
+    </footer>
+  </body>
+</html>
