@@ -1,24 +1,21 @@
 :root {
-  --tamu-maroon: #500000;
-  --tamu-maroon-dark: #3b0000;
-  --tamu-maroon-deep: #210000;
-  --tamu-cream: #f7f4ef;
-  --tamu-cream-soft: #e5ded5;
-  --tamu-tan: #c9b08a;
-  --ink-invert: #101012;
-  --bg-0: #0b0405;
-  --bg-1: #150607;
-  --bg-2: #220a0c;
+  --ai-blue: #4e7dff;
+  --ai-cyan: #6fe8ff;
+  --ai-mint: #7cf8d3;
+  --ink-invert: #061322;
+  --bg-0: #050914;
+  --bg-1: #081126;
+  --bg-2: #0c1a34;
   --panel: rgba(10, 18, 38, 0.6);
   --panel-strong: rgba(9, 16, 31, 0.82);
-  --line: rgba(212, 176, 176, 0.2);
-  --text: var(--tamu-cream);
-  --text-soft: #d7c6c6;
-  --text-dim: #ab8f8f;
-  --cyan: var(--tamu-cream-soft);
-  --mint: var(--tamu-cream);
-  --sun: var(--tamu-tan);
-  --violet: #7e4a4a;
+  --line: rgba(125, 176, 255, 0.22);
+  --text: #eef5ff;
+  --text-soft: #b8c9e8;
+  --text-dim: #7e92b7;
+  --cyan: var(--ai-cyan);
+  --mint: var(--ai-mint);
+  --sun: #79a6ff;
+  --violet: var(--ai-blue);
   --radius-xl: 28px;
   --radius-lg: 20px;
   --radius-md: 14px;
@@ -38,9 +35,9 @@ body {
   font-family: "Sora", "Avenir Next", "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 12% 18%, rgba(139, 83, 83, 0.2), transparent 24%),
-    radial-gradient(circle at 84% 16%, rgba(200, 162, 90, 0.16), transparent 24%),
-    radial-gradient(circle at 50% 100%, rgba(122, 74, 74, 0.2), transparent 36%),
+    radial-gradient(circle at 12% 18%, rgba(78, 125, 255, 0.18), transparent 24%),
+    radial-gradient(circle at 84% 16%, rgba(111, 232, 255, 0.14), transparent 24%),
+    radial-gradient(circle at 50% 100%, rgba(124, 248, 211, 0.12), transparent 36%),
     linear-gradient(160deg, var(--bg-0), var(--bg-1) 45%, var(--bg-2));
   min-height: 100vh;
   overflow-x: hidden;
@@ -85,13 +82,13 @@ body::before {
 .aurora-left {
   top: -10rem;
   left: -8rem;
-  background: var(--tamu-maroon);
+  background: var(--ai-blue);
 }
 
 .aurora-right {
   top: -4rem;
   right: -8rem;
-  background: var(--tamu-tan);
+  background: var(--ai-cyan);
 }
 
 .grain {
@@ -115,8 +112,8 @@ body::before {
   padding: 0.42rem;
   border-radius: 16px;
   width: min(1180px, calc(100vw - 1.25rem));
-  background: linear-gradient(180deg, rgba(30, 14, 18, 0.94), rgba(20, 10, 13, 0.9));
-  border: 1px solid rgba(212, 176, 176, 0.22);
+  background: linear-gradient(180deg, rgba(10, 20, 40, 0.94), rgba(8, 14, 27, 0.9));
+  border: 1px solid rgba(125, 176, 255, 0.28);
   backdrop-filter: blur(14px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
@@ -139,16 +136,16 @@ body::before {
 
 .nav-link:hover {
   color: var(--text);
-  background: rgba(200, 162, 90, 0.14);
-  border-color: rgba(200, 162, 90, 0.4);
+  background: rgba(111, 232, 255, 0.1);
+  border-color: rgba(111, 232, 255, 0.45);
   transform: translateY(-1px);
 }
 
 .nav-link.active {
   color: var(--ink-invert);
   border-color: transparent;
-  background: linear-gradient(135deg, var(--mint), var(--tamu-cream-soft));
-  box-shadow: 0 8px 18px rgba(200, 162, 90, 0.2);
+  background: linear-gradient(135deg, var(--mint), var(--cyan));
+  box-shadow: 0 8px 18px rgba(111, 232, 255, 0.24);
 }
 
 .nav-icon {
@@ -306,19 +303,19 @@ h3 {
 
 .button:hover {
   transform: translateY(-2px);
-  border-color: rgba(200, 162, 90, 0.55);
-  box-shadow: 0 16px 30px rgba(200, 162, 90, 0.12);
+  border-color: rgba(111, 232, 255, 0.55);
+  box-shadow: 0 16px 30px rgba(111, 232, 255, 0.15);
 }
 
 .button.primary {
   color: var(--ink-invert);
-  background: linear-gradient(135deg, var(--mint), var(--tamu-cream-soft));
+  background: linear-gradient(135deg, var(--mint), var(--cyan));
   border-color: transparent;
   font-weight: 600;
 }
 
 .button.primary:hover {
-  box-shadow: 0 18px 34px rgba(200, 162, 90, 0.2);
+  box-shadow: 0 18px 34px rgba(111, 232, 255, 0.24);
 }
 
 .hero-visual {
@@ -334,7 +331,7 @@ h3 {
   aspect-ratio: 1 / 1;
   border-radius: 32px;
   background:
-    radial-gradient(circle at center, rgba(200, 162, 90, 0.14), transparent 38%),
+    radial-gradient(circle at center, rgba(78, 125, 255, 0.14), transparent 38%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
   border: 1px solid rgba(163, 184, 255, 0.16);
   box-shadow: var(--shadow);
@@ -392,8 +389,8 @@ h3 {
 .core-node {
   width: 1.15rem;
   height: 1.15rem;
-  background: linear-gradient(135deg, var(--mint), var(--tamu-cream-soft));
-  box-shadow: 0 0 32px rgba(200, 162, 90, 0.45);
+  background: linear-gradient(135deg, var(--mint), var(--cyan));
+  box-shadow: 0 0 32px rgba(111, 232, 255, 0.45);
 }
 
 .pulse {
@@ -529,8 +526,8 @@ main {
 
 .portal-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(200, 162, 90, 0.5);
-  box-shadow: 0 24px 42px rgba(200, 162, 90, 0.14);
+  border-color: rgba(111, 232, 255, 0.5);
+  box-shadow: 0 24px 42px rgba(111, 232, 255, 0.18);
 }
 
 .portal-card h3 {
@@ -544,8 +541,8 @@ main {
 .card-icon {
   font-size: 0.92rem;
   color: var(--cyan);
-  background: rgba(200, 162, 90, 0.08);
-  border: 1px solid rgba(200, 162, 90, 0.22);
+  background: rgba(111, 232, 255, 0.08);
+  border: 1px solid rgba(111, 232, 255, 0.22);
   border-radius: 10px;
   padding: 0.2rem;
   margin: 0 0 0.45rem;
@@ -695,7 +692,7 @@ canvas {
   inset: auto -20% -85% auto;
   width: 60%;
   height: 80%;
-  background: radial-gradient(circle, rgba(107, 35, 39, 0.24), transparent 65%);
+  background: radial-gradient(circle, rgba(78, 125, 255, 0.2), transparent 65%);
   pointer-events: none;
 }
 
@@ -712,12 +709,12 @@ canvas {
 .inline-link {
   color: var(--cyan);
   text-decoration: none;
-  border-bottom: 1px solid rgba(118, 227, 255, 0.35);
+  border-bottom: 1px solid rgba(111, 232, 255, 0.45);
 }
 
 .inline-link:hover {
   color: var(--mint);
-  border-bottom-color: rgba(126, 255, 201, 0.6);
+  border-bottom-color: rgba(124, 248, 211, 0.7);
 }
 
 
