@@ -112,6 +112,9 @@ body::before {
   padding: 0.5rem 0.95rem;
   letter-spacing: 0.03em;
   transition: border-color 180ms ease, color 180ms ease, transform 180ms ease, background-color 180ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .nav-link:hover {
@@ -126,6 +129,11 @@ body::before {
   border-color: transparent;
   background: linear-gradient(135deg, var(--mint), var(--cyan));
   box-shadow: 0 8px 18px rgba(118, 227, 255, 0.2);
+}
+
+.nav-icon {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .hero,
@@ -447,6 +455,8 @@ main {
 .card {
   border-radius: var(--radius-lg);
   padding: 1.2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-index {
@@ -486,6 +496,8 @@ main {
   text-decoration: none;
   box-shadow: var(--shadow);
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .portal-card:hover {
@@ -500,6 +512,16 @@ main {
 
 .portal-card p {
   color: var(--text-soft);
+}
+
+.card-icon {
+  font-size: 1.15rem;
+  color: var(--cyan);
+  background: rgba(118, 227, 255, 0.08);
+  border: 1px solid rgba(118, 227, 255, 0.22);
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: 0 0 0.55rem;
 }
 
 .tool-grid,
@@ -607,6 +629,8 @@ canvas {
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   backdrop-filter: blur(14px);
+  position: relative;
+  overflow: hidden;
 }
 
 .profile-card img {
@@ -615,6 +639,26 @@ canvas {
   object-fit: cover;
   border-radius: var(--radius-md);
   border: 1px solid rgba(163, 184, 255, 0.18);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.panel,
+.profile-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after,
+.portal-card::after,
+.panel::after,
+.profile-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -20% -85% auto;
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(118, 227, 255, 0.12), transparent 65%);
+  pointer-events: none;
 }
 
 .profile-affiliation {
@@ -636,6 +680,26 @@ canvas {
 .inline-link:hover {
   color: var(--mint);
   border-bottom-color: rgba(126, 255, 201, 0.6);
+}
+
+.hero-visual .ring {
+  animation: drift 10s ease-in-out infinite;
+}
+
+.hero-visual .ring-b {
+  animation-delay: 1.2s;
+}
+
+.hero-visual .ring-c {
+  animation-delay: 2.3s;
+}
+
+.hero-visual .pulse {
+  animation: pulseBeat 2.8s ease-in-out infinite;
+}
+
+.hero-visual .pulse-b {
+  animation-delay: 1.4s;
 }
 
 .manifesto {
@@ -671,6 +735,18 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes drift {
+  0% { transform: translate(-50%, -50%) scale(0.98); }
+  50% { transform: translate(-50%, -50%) scale(1.02); }
+  100% { transform: translate(-50%, -50%) scale(0.98); }
+}
+
+@keyframes pulseBeat {
+  0% { opacity: 0.32; transform: translate(-50%, -50%) scale(0.94); }
+  50% { opacity: 0.85; transform: translate(-50%, -50%) scale(1.06); }
+  100% { opacity: 0.32; transform: translate(-50%, -50%) scale(0.94); }
 }
 
 @media (max-width: 980px) {

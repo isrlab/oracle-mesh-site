@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -22,12 +26,12 @@
     <div class="grain"></div>
 
     <nav class="top-nav" aria-label="Primary">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="tools.html">Tools</a>
-      <a class="nav-link" href="visualizations.html">Visualizations</a>
-      <a class="nav-link active" href="docs.html">Docs</a>
-      <a class="nav-link" href="architecture.html">Architecture</a>
-      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="index.html"><span class="material-symbols-rounded nav-icon">home</span>Home</a>
+      <a class="nav-link" href="tools.html"><span class="material-symbols-rounded nav-icon">deployed_code</span>Tools</a>
+      <a class="nav-link" href="visualizations.html"><span class="material-symbols-rounded nav-icon">monitoring</span>Visualizations</a>
+      <a class="nav-link active" href="docs.html"><span class="material-symbols-rounded nav-icon">menu_book</span>Docs</a>
+      <a class="nav-link" href="architecture.html"><span class="material-symbols-rounded nav-icon">account_tree</span>Architecture</a>
+      <a class="nav-link" href="about.html"><span class="material-symbols-rounded nav-icon">groups</span>About</a>
     </nav>
 
     <header class="page-hero">
@@ -43,6 +47,7 @@
       <section class="docs-layout">
         <article class="panel">
           <p class="section-kicker">Getting started</p>
+          <span class="material-symbols-rounded card-icon">rocket_launch</span>
           <h2>Portal orientation</h2>
           <ul class="doc-list">
             <li>Conceptual overview of ORACLE-MESH mission knowledge abstractions</li>
@@ -53,6 +58,7 @@
 
         <article class="panel">
           <p class="section-kicker">API reference</p>
+          <span class="material-symbols-rounded card-icon">api</span>
           <h2>Module interfaces</h2>
           <ul class="doc-list">
             <li>Probabilistic node contracts and update handlers</li>
@@ -64,6 +70,7 @@
 
         <article class="panel">
           <p class="section-kicker">Operator handbooks</p>
+          <span class="material-symbols-rounded card-icon">support_agent</span>
           <h2>Deployment playbooks</h2>
           <ul class="doc-list">
             <li>Edge inference profile configuration and resource budgeting</li>
