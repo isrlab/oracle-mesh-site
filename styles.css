@@ -137,7 +137,7 @@ footer {
 }
 
 .nav-brand-icon {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: 0.08rem;
   color: #a9d9ff;
 }
@@ -150,13 +150,13 @@ footer {
 
 .nav-brand-title {
   font-family: "Chakra Petch", "Space Grotesk", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 1.05;
 }
 
 .nav-brand-subtitle {
   font-family: "Chakra Petch", "Space Grotesk", sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.72rem;
   line-height: 1.2;
   letter-spacing: 0.12em;
   color: #8fa7bc;
