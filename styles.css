@@ -111,7 +111,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 0.78rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 14px;
   background: linear-gradient(180deg, rgba(5, 10, 18, 0.82), rgba(3, 7, 12, 0.78));
   border: 1px solid rgba(116, 246, 255, 0.12);
@@ -127,6 +127,19 @@ footer {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: -0.02em;
+}
+
+.nav-brand-logo {
+  display: block;
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-brand-icon {
+  font-size: 1.5rem;
+  margin-top: 0.08rem;
+  color: #a9d9ff;
 }
 
 .nav-brand-copy {
@@ -149,10 +162,9 @@ footer {
   color: #8fa7bc;
 }
 
-.nav-brand-icon {
-  font-size: 1.5rem;
-  margin-top: 0.08rem;
-  color: #a9d9ff;
+.darwin-brand {
+  font-family: "Chakra Petch", "Space Grotesk", sans-serif;
+  font-weight: 700;
 }
 
 .nav-menu {
@@ -274,6 +286,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
   font-weight: 700;
   letter-spacing: -0.04em;
 }
