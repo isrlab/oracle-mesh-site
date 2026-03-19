@@ -71,7 +71,9 @@
               In practice, the framework couples evidence assimilation,
               belief coordination, and robust action selection into a single loop:
               combine uncertain observations, reconcile local and shared model context,
-              and output decisions with explicit confidence and safety margin awareness.
+              and output decisions with explicit confidence and safety margin awareness,
+              producing certifiable autonomy grounded in quantified uncertainty rather than
+              black-box prediction.
             </p>
           </div>
           <div class="product-connector" aria-hidden="true"></div>
@@ -177,6 +179,60 @@
           </figure>
         </div>
       </section>
+
+      <h2 class="section-heading">Core Technical Innovations</h2>
+      <p style="color:var(--text-soft); margin: -0.5rem 0 1rem; max-width: 72ch;">
+        Six interlocking technical advances form the computational foundation of
+        <span class="darwin-brand">D³ARWIN</span>. Each is independently novel; together they constitute a
+        closed-loop architecture for uncertainty-aware decision intelligence at the edge.
+      </p>
+
+      <div class="grid">
+
+        <article class="card">
+          <span class="material-symbols-rounded panel-symbol">hub</span>
+          <p class="section-kicker">Situational Awareness</p>
+          <h3>GP-Finite State Machine</h3>
+          <p>The mission options space is represented as a finite automaton where each node is a Gaussian process. Sensor observations drive posterior state estimation across the graph, producing principled situational awareness in partially observable, dynamically evolving environments.</p>
+        </article>
+
+        <article class="card">
+          <span class="material-symbols-rounded panel-symbol">schema</span>
+          <p class="section-kicker">Physics-Informed Surrogates</p>
+          <h3>Networked Deep Gaussian Processes</h3>
+          <p>A hierarchical network of physics-informed GP components models coupled multi-physics domains: aerodynamics, structures, propulsion, and flight dynamics. Coupling interfaces propagate calibrated uncertainty through the network topology without requiring separate coupling models.</p>
+        </article>
+
+        <article class="card">
+          <span class="material-symbols-rounded panel-symbol">sync_alt</span>
+          <p class="section-kicker">Real-Time State Estimation</p>
+          <h3>Data Assimilation on Graphs</h3>
+          <p>Graph signal processing integrates streaming sensor data across GP networks. Uncertainty propagates through graph diffusion operators governed by network topology, while Bayesian information fusion continuously updates posterior state distributions as new observations arrive.</p>
+        </article>
+
+        <article class="card">
+          <span class="material-symbols-rounded panel-symbol">tune</span>
+          <p class="section-kicker">Adaptive Runtime Fidelity</p>
+          <h3>Dialable-Fidelity Digital Twin</h3>
+          <p>Certified link-reduction approximations allow the surrogate network to transition between high-fidelity offline analysis and low-latency onboard prediction. Each reduced mode is validated against the full reference model with conservative uncertainty adjustments, preserving safety margin consistency across fidelity tiers.</p>
+        </article>
+
+        <article class="card">
+          <span class="material-symbols-rounded panel-symbol">query_stats</span>
+          <p class="section-kicker">Uncertainty Quantification</p>
+          <h3>Bayesian-Agentic UQ Framework</h3>
+          <p>Model refinement is formulated as a sequential decision problem. A computational agent allocates fidelity by optimizing over prediction error, confidence bounds, and computational cost, distinguishing epistemic from aleatoric uncertainty and directing refinement only where it produces operationally meaningful improvement.</p>
+        </article>
+
+        <article class="card">
+          <span class="material-symbols-rounded panel-symbol">psychology</span>
+          <p class="section-kicker">Policy Optimization</p>
+          <h3>Deep Reinforcement Learning on Graphs</h3>
+          <p>A DRL agent learns decision policies within the GP-FSM framework. GP posteriors provide risk-aware reward signals and probabilistic action evaluation, enabling continuous policy refinement across mission scenarios with quantified safety margins and explicit uncertainty budgets.</p>
+        </article>
+
+      </div>
+
     </main>
 
     <footer>
