@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Research | D³ARWIN</title>
     <meta
       name="description"
@@ -73,7 +76,7 @@
           </div>
           <div class="product-connector" aria-hidden="true"></div>
           <figure class="product-figure" aria-label="Abstract D³ARWIN summary diagram">
-            <svg viewBox="0 0 660 380" role="img" aria-label="Abstract flow for D³ARWIN">
+            <svg viewBox="0 0 800 380" role="img" aria-label="Abstract flow for D³ARWIN">
               <defs>
                 <linearGradient id="darwinPanel" x1="0" x2="1" y1="0" y2="1">
                   <stop offset="0%" stop-color="rgba(15, 36, 60, 0.92)" />
@@ -88,80 +91,86 @@
               </defs>
 
               <!-- outer panel -->
-              <rect x="12" y="12" width="636" height="356" rx="22" fill="url(#darwinPanel)" stroke="rgba(116, 246, 255, 0.22)" stroke-width="1.2" />
+              <rect x="10" y="10" width="780" height="360" rx="18" fill="url(#darwinPanel)" stroke="rgba(116, 246, 255, 0.22)" stroke-width="1" />
 
               <!-- core glow rings -->
               <g fill="rgba(116, 246, 255, 0.05)">
-                <circle cx="290" cy="174" r="72" />
-                <circle cx="290" cy="174" r="48" />
-              </g>
-
-              <!-- connection paths -->
-              <g fill="none" stroke="rgba(116, 246, 255, 0.38)" stroke-width="1.6" stroke-linecap="round">
-                <!-- GP-FSM → Core -->
-                <path d="M200 170 C228 170, 238 172, 255 174" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
-                <!-- Core → Aim 1 -->
-                <path d="M325 152 C355 128, 380 96, 410 76" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
-                <!-- Core → Aim 2 -->
-                <path d="M325 174 C358 174, 382 174, 410 174" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
-                <!-- Core → Aim 3 -->
-                <path d="M325 196 C355 222, 380 256, 410 276" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
-                <!-- Core → tech strip -->
-                <path d="M290 222 C290 260, 290 290, 290 322" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <circle cx="348" cy="160" r="76" />
+                <circle cx="348" cy="160" r="50" />
               </g>
 
               <!-- boxes -->
-              <g fill="#0d1f35" stroke="rgba(116, 246, 255, 0.35)" stroke-width="1.3">
-                <!-- GP-FSM: 2 lines, medium width -->
-                <rect x="36" y="144" width="164" height="52" rx="14" />
+              <g fill="#0d1f35" stroke="rgba(116, 246, 255, 0.35)" stroke-width="1">
+                <!-- GP-FSM -->
+                <rect x="28" y="130" width="210" height="56" rx="12" />
                 <!-- Core -->
-                <rect x="255" y="128" width="70" height="92" rx="18" fill="rgba(22, 55, 90, 0.55)" stroke="rgba(116, 246, 255, 0.5)" />
+                <rect x="288" y="112" width="120" height="96" rx="16" fill="rgba(22, 55, 90, 0.55)" stroke="rgba(116, 246, 255, 0.5)" />
                 <!-- Aim 1 -->
-                <rect x="410" y="46" width="184" height="48" rx="14" />
+                <rect x="452" y="32" width="310" height="60" rx="12" />
                 <!-- Aim 2 -->
-                <rect x="410" y="148" width="184" height="48" rx="14" />
+                <rect x="452" y="130" width="310" height="60" rx="12" />
                 <!-- Aim 3 -->
-                <rect x="410" y="254" width="158" height="44" rx="14" />
+                <rect x="452" y="232" width="280" height="60" rx="12" />
                 <!-- Tech strip -->
-                <rect x="140" y="322" width="368" height="26" rx="11" />
+                <rect x="120" y="318" width="490" height="32" rx="10" />
               </g>
 
-              <!-- icon badges -->
-              <g fill="rgba(124, 248, 211, 0.88)" stroke="rgba(15, 31, 52, 0.7)" stroke-width="0.8">
-                <circle cx="52" cy="160" r="4.5" />
-                <rect x="282" y="138" width="8" height="8" rx="2" />
-                <polygon points="426,58 431,69 421,69" />
-                <polygon points="426,160 431,171 421,171" />
-                <polygon points="426,266 431,277 421,277" />
-                <rect x="152" y="331" width="7" height="7" rx="1.5" />
+              <!-- connection paths (drawn after boxes so dot markers appear on top) -->
+              <g fill="none" stroke="rgba(116, 246, 255, 0.38)" stroke-width="1.4" stroke-linecap="round">
+                <!-- GP-FSM → Core -->
+                <path d="M238 158 C260 158, 274 160, 288 160" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <!-- Core → Aim 1 -->
+                <path d="M408 138 C425 110, 440 78, 452 62" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <!-- Core → Aim 2 -->
+                <path d="M408 160 C425 160, 440 160, 452 160" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <!-- Core → Aim 3 -->
+                <path d="M408 182 C425 212, 440 246, 452 262" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <!-- Core → tech strip -->
+                <path d="M348 208 C348 240, 348 280, 348 318" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+              </g>
+
+              <!-- icon badges — all at consistent (box_x+20, box_y+18) to clear rounded corners -->
+              <g fill="rgba(124, 248, 211, 0.88)" stroke="rgba(15, 31, 52, 0.7)" stroke-width="0.6">
+                <!-- GP-FSM badge (box 28,130) -->
+                <circle cx="48" cy="148" r="3" />
+                <!-- Core badge (box 288,112) -->
+                <rect x="305" y="127" width="6" height="6" rx="1.5" />
+                <!-- Aim 1 badge (box 452,32) -->
+                <polygon points="472,46 476,54 468,54" />
+                <!-- Aim 2 badge (box 452,130) -->
+                <polygon points="472,144 476,152 468,152" />
+                <!-- Aim 3 badge (box 452,232) -->
+                <polygon points="472,246 476,254 468,254" />
+                <!-- Tech strip badge (box 120,318) -->
+                <rect x="137" y="331" width="6" height="6" rx="1" />
               </g>
 
               <!-- labels -->
               <g fill="#eaf5ff" font-family="Space Grotesk, sans-serif">
                 <!-- GP-FSM -->
-                <text x="118" y="165" font-size="8" text-anchor="middle">GP-FSM State Estimation</text>
-                <text x="118" y="179" font-size="6.4" text-anchor="middle" fill="rgba(234,245,255,0.7)">situational awareness on graph</text>
+                <text x="143" y="155" font-size="13" text-anchor="middle">GP-FSM State Estimation</text>
+                <text x="143" y="173" font-size="10.5" text-anchor="middle" fill="rgba(234,245,255,0.7)">situational awareness on graph</text>
 
                 <!-- Core -->
-                <text x="290" y="162" font-size="8.6" text-anchor="middle" font-weight="500">D³ARWIN</text>
-                <text x="290" y="175" font-size="8.6" text-anchor="middle" font-weight="500">Core</text>
-                <text x="290" y="190" font-size="5.6" text-anchor="middle" fill="rgba(234,245,255,0.65)">uncertainty-aware</text>
-                <text x="290" y="201" font-size="5.6" text-anchor="middle" fill="rgba(234,245,255,0.65)">decision loop</text>
+                <text x="348" y="148" font-size="13" text-anchor="middle" font-weight="500">D³ARWIN</text>
+                <text x="348" y="165" font-size="13" text-anchor="middle" font-weight="500">Core</text>
+                <text x="348" y="181" font-size="9" text-anchor="middle" fill="rgba(234,245,255,0.65)">uncertainty-aware</text>
+                <text x="348" y="193" font-size="9" text-anchor="middle" fill="rgba(234,245,255,0.65)">decision loop</text>
 
                 <!-- Aim 1 -->
-                <text x="443" y="68" font-size="7.4" text-anchor="start">Offline strategic, tactical,</text>
-                <text x="443" y="81" font-size="7.4" text-anchor="start">and computational preparedness</text>
+                <text x="484" y="58" font-size="13" text-anchor="start">Offline strategic, tactical,</text>
+                <text x="484" y="76" font-size="13" text-anchor="start">and computational preparedness</text>
 
                 <!-- Aim 2 -->
-                <text x="443" y="170" font-size="7.4" text-anchor="start">Optimal dynamic data-driven</text>
-                <text x="443" y="183" font-size="7.4" text-anchor="start">response to changing conditions</text>
+                <text x="484" y="156" font-size="13" text-anchor="start">Optimal dynamic data-driven</text>
+                <text x="484" y="174" font-size="13" text-anchor="start">response to changing conditions</text>
 
                 <!-- Aim 3 -->
-                <text x="443" y="274" font-size="7.4" text-anchor="start">In silico demonstration of</text>
-                <text x="443" y="287" font-size="7.4" text-anchor="start">mission effectiveness</text>
+                <text x="484" y="258" font-size="13" text-anchor="start">In silico demonstration of</text>
+                <text x="484" y="276" font-size="13" text-anchor="start">mission effectiveness</text>
 
                 <!-- Tech strip -->
-                <text x="324" y="339" font-size="6.4" text-anchor="middle" fill="rgba(234,245,255,0.8)">Networked GPs  |  Automata Theory  |  Data Assimilation on Graphs  |  DRL on Graphs</text>
+                <text x="365" y="340" font-size="11" text-anchor="middle" fill="rgba(234,245,255,0.8)">Networked GPs  |  Automata Theory  |  Data Assimilation on Graphs  |  DRL on Graphs</text>
               </g>
             </svg>
             <figcaption>Technical map: GP-FSM state estimation feeds the <span class="darwin-brand">D³ARWIN</span> core, which supports preparedness, dynamic response, and in silico performance validation.</figcaption>

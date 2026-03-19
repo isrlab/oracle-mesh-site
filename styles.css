@@ -8,10 +8,13 @@
   --bg-2: #0b1420;
   --line: rgba(116, 246, 255, 0.16);
   --text: #f4fbff;
+  --text-bright: #f7fbff;
   --text-soft: #b9cad8;
   --text-dim: #8696a7;
+  --accent: #8fd7e8;
   --cyan: var(--ai-cyan);
   --mint: var(--ai-mint);
+  --font-display: "Chakra Petch", "Space Grotesk", sans-serif;
   --radius-xl: 30px;
   --radius-lg: 22px;
   --radius-md: 16px;
@@ -983,6 +986,11 @@ canvas {
   font-family: "Chakra Petch", "Space Grotesk", sans-serif;
   font-size: 1.02rem;
   letter-spacing: 0.04em;
+}
+
+.inline-link:visited {
+  color: var(--cyan);
+  border-bottom-color: rgba(116, 246, 255, 0.45);
 }
 
 .inline-link:hover {
