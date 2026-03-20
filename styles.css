@@ -241,7 +241,10 @@ footer {
 
 .hero-copy {
   order: 2;
-  align-self: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 560px;
   margin: 0;
   text-align: left;
