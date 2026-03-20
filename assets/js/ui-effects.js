@@ -42,7 +42,23 @@
     revealTargets.forEach((el) => el.classList.add("in-view"));
   }
 
-  const transitionDurationMs = 260;
+  // Pause SVG animations when hero is off-screen to save CPU
+  const heroSvg = document.querySelector(".hero-diagram svg");
+  if (heroSvg && "IntersectionObserver" in window) {
+    const svgObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          heroSvg.unpauseAnimations();
+        } else {
+          heroSvg.pauseAnimations();
+        }
+      },
+      { threshold: 0 }
+    );
+    svgObserver.observe(heroSvg);
+  }
+
+  const transitionDurationMs = 160;
   document.querySelectorAll("a[href]").forEach((anchor) => {
     anchor.addEventListener("click", (event) => {
       const href = anchor.getAttribute("href") || "";

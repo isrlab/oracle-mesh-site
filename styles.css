@@ -76,6 +76,8 @@ body::before {
   filter: blur(80px);
   opacity: 0.2;
   pointer-events: none;
+  will-change: transform;
+  contain: strict;
 }
 
 .aurora-left {

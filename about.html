@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+    <meta name="theme-color" content="#030507" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23061226'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%236fe8ff' font-family='sans-serif' font-weight='700'>D</text></svg>" />
     <title>About | D³ARWIN</title>
     <meta
       name="description"
@@ -13,12 +12,20 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://engineering.tamu.edu" />
     <link
+      rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript><link
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
+    /></noscript>
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -57,11 +64,15 @@
       <h2 class="section-heading">Team</h2>
       <section class="founders-grid">
         <article class="profile-card-compact">
-          <img
-            src="https://engineering.tamu.edu/aerospace/_files/_images/_profile-images/Raktim-Bhattacharya.jpg"
-            alt="Raktim Bhattacharya"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="assets/images/team/raktim-bhattacharya.webp" type="image/webp" />
+            <img
+              src="assets/images/team/raktim-bhattacharya.jpg"
+              alt="Raktim Bhattacharya"
+              width="200" height="200"
+              loading="lazy"
+            />
+          </picture>
           <div>
             <h3>Raktim Bhattacharya, Ph.D.</h3>
             <p class="profile-role">Professor, Aerospace Engineering</p>
@@ -74,11 +85,15 @@
         </article>
 
         <article class="profile-card-compact">
-          <img
-            src="https://engineering.tamu.edu/mechanical/_files/_images/_profile-images/allaire-douglas-profile.jpg"
-            alt="Douglas Allaire"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="assets/images/team/douglas-allaire.webp" type="image/webp" />
+            <img
+              src="assets/images/team/douglas-allaire.jpg"
+              alt="Douglas Allaire"
+              width="200" height="200"
+              loading="lazy"
+            />
+          </picture>
           <div>
             <h3>Douglas Allaire, Ph.D.</h3>
             <p class="profile-role">Associate Professor, Mechanical Engineering</p>
@@ -91,11 +106,15 @@
         </article>
 
         <article class="profile-card-compact">
-          <img
-            src="https://engineering.tamu.edu/aerospace/_files/_images/_profile-images/Valasek_web_2016.jpg"
-            alt="John Valasek"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="assets/images/team/john-valasek.webp" type="image/webp" />
+            <img
+              src="assets/images/team/john-valasek.jpg"
+              alt="John Valasek"
+              width="200" height="200"
+              loading="lazy"
+            />
+          </picture>
           <div>
             <h3>John Valasek, Ph.D.</h3>
             <p class="profile-role">Professor, Aerospace Engineering </p>
@@ -108,11 +127,15 @@
         </article>
 
         <article class="profile-card-compact">
-          <img
-            src="https://engineering.tamu.edu/aerospace/_files/_images/_profile-images/leyva-ivett-profile-31May2022.jpg"
-            alt="Ivett Leyva"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="assets/images/team/ivett-leyva.webp" type="image/webp" />
+            <img
+              src="assets/images/team/ivett-leyva.jpg"
+              alt="Ivett Leyva"
+              width="200" height="200"
+              loading="lazy"
+            />
+          </picture>
           <div>
             <h3>Ivett Leyva, Ph.D.</h3>
             <p class="profile-role">Associate Dean for Research, Texas A&amp;M-Fort Worth<br />Professor, Aerospace Engineering</p>
