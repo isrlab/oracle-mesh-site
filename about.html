@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#030507" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23061226'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%236fe8ff' font-family='sans-serif' font-weight='700'>D</text></svg>" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%276%27%20fill%3D%27%23061226%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2723%27%20font-size%3D%2720%27%20text-anchor%3D%27middle%27%20fill%3D%27%236fe8ff%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27700%27%3ED%3C%2Ftext%3E%3C%2Fsvg%3E" />
     <title>About | D³ARWIN</title>
     <meta
       name="description"
       content="About the D³ARWIN team: research in uncertainty quantification, robust inference, decision support, and multiscale systems at Texas A&M University."
     />
+    <link rel="canonical" href="https://d3arwin.github.io/about.html" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="D³ARWIN" />
+    <meta property="og:url" content="https://d3arwin.github.io/about.html" />
+    <meta property="og:title" content="About | D³ARWIN" />
+    <meta property="og:description" content="Faculty investigators from aerospace and mechanical engineering at Texas A&amp;M University behind the D³ARWIN program." />
+    <meta property="og:image" content="https://d3arwin.github.io/assets/images/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="D³ARWIN — Dynamic Data-Driven Adaptive Reasoning With Inference Networks" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About | D³ARWIN" />
+    <meta name="twitter:description" content="Faculty investigators behind the D³ARWIN program at Texas A&amp;M University." />
+    <meta name="twitter:image" content="https://d3arwin.github.io/assets/images/og-preview.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -27,7 +41,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200&display=block"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=8" />
   </head>
   <body>
     <div class="aurora aurora-left"></div>
@@ -45,11 +59,30 @@
       <div class="nav-menu">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="research.html">Research</a>
+        <a class="nav-link" href="flight-tests.html">Flight Tests</a>
+        <a class="nav-link" href="publications.html">Publications</a>
         <a class="nav-link" href="about.html">About</a>
       </div>
     </nav>
 
     <header class="page-hero">
+      <svg class="page-hero-mark" viewBox="0 0 220 24" aria-hidden="true" focusable="false">
+        <g stroke="rgba(116, 246, 255, 0.38)" stroke-width="1" fill="none" stroke-linecap="round">
+          <path d="M12 12 L52 12" />
+          <path d="M52 12 L92 12" />
+          <path d="M92 12 L132 12" />
+          <path d="M132 12 L172 12" />
+          <path d="M172 12 L208 12" />
+        </g>
+        <g fill="rgba(116, 246, 255, 0.9)">
+          <circle cx="12" cy="12" r="2.6" />
+          <circle cx="52" cy="12" r="2.4" />
+          <circle cx="92" cy="12" r="3.2" />
+          <circle cx="132" cy="12" r="2.4" />
+          <circle cx="172" cy="12" r="2.4" />
+          <circle cx="208" cy="12" r="2.6" />
+        </g>
+      </svg>
       <p class="badge">About</p>
       <h1>People behind <span class="darwin-brand">D³ARWIN</span></h1>
       <p class="lede">
@@ -61,15 +94,16 @@
 
     <main>
       <h2 class="section-heading">Team</h2>
-      <section class="founders-grid">
+      <section class="team-grid">
         <article class="profile-card-compact">
           <picture>
             <source srcset="assets/images/team/raktim-bhattacharya.webp" type="image/webp" />
             <img
               src="assets/images/team/raktim-bhattacharya.jpg"
               alt="Raktim Bhattacharya"
-              width="200" height="200"
-              loading="lazy"
+              width="110" height="140"
+              loading="eager"
+              fetchpriority="high"
             />
           </picture>
           <div>
@@ -78,7 +112,7 @@
             <p class="profile-affiliation">Texas A&amp;M University</p>
             <p class="profile-expertise">Uncertainty quantification, data assimilation, robust control & estimation, guidance & navigation, nonlinear systems</p>
             <p class="profile-links">
-              <a class="inline-link" href="https://isrlab.github.io">Profile</a>
+              <a class="inline-link" href="https://isrlab.github.io" target="_blank" rel="noopener" aria-label="Raktim Bhattacharya — external profile (opens in new tab)">Profile</a>
             </p>
           </div>
         </article>
@@ -89,7 +123,7 @@
             <img
               src="assets/images/team/douglas-allaire.jpg"
               alt="Douglas Allaire"
-              width="200" height="200"
+              width="110" height="140"
               loading="lazy"
             />
           </picture>
@@ -99,7 +133,7 @@
             <p class="profile-affiliation">Texas A&amp;M University</p>
             <p class="profile-expertise">Bayesian optimization, multifidelity methods, uncertainty quantification, predictive analytics</p>
             <p class="profile-links">
-              <a class="inline-link" href="https://cdl.engr.tamu.edu">Profile</a>
+              <a class="inline-link" href="https://cdl.engr.tamu.edu" target="_blank" rel="noopener" aria-label="Douglas Allaire — external profile (opens in new tab)">Profile</a>
             </p>
           </div>
         </article>
@@ -110,17 +144,17 @@
             <img
               src="assets/images/team/john-valasek.jpg"
               alt="John Valasek"
-              width="200" height="200"
+              width="110" height="140"
               loading="lazy"
             />
           </picture>
           <div>
             <h3>John Valasek, Ph.D.</h3>
-            <p class="profile-role">Professor, Aerospace Engineering </p>
+            <p class="profile-role">Professor, Aerospace Engineering</p>
             <p class="profile-affiliation">Texas A&amp;M University</p>
             <p class="profile-expertise">Autonomous systems, nonlinear control, vision-based navigation, cyber-physical systems, flight tests</p>
             <p class="profile-links">
-              <a class="inline-link" href="https://vscl.tamu.edu">Profile</a>
+              <a class="inline-link" href="https://vscl.tamu.edu" target="_blank" rel="noopener" aria-label="John Valasek — external profile (opens in new tab)">Profile</a>
             </p>
           </div>
         </article>
@@ -131,7 +165,7 @@
             <img
               src="assets/images/team/ivett-leyva.jpg"
               alt="Ivett Leyva"
-              width="200" height="200"
+              width="110" height="140"
               loading="lazy"
             />
           </picture>
@@ -141,7 +175,49 @@
             <p class="profile-affiliation">Texas A&amp;M University</p>
             <p class="profile-expertise">Hypersonic aerodynamics, boundary-layer transition, combustion stability</p>
             <p class="profile-links">
-              <a class="inline-link" href="https://engineering.tamu.edu/aerospace/profiles/leyva-ivett.html">Profile</a>
+              <a class="inline-link" href="https://engineering.tamu.edu/aerospace/profiles/leyva-ivett.html" target="_blank" rel="noopener" aria-label="Ivett Leyva — external profile (opens in new tab)">Profile</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="profile-card-compact">
+          <picture>
+            <source srcset="assets/images/team/moble-benedict.webp" type="image/webp" />
+            <img
+              src="assets/images/team/moble-benedict.jpg"
+              alt="Moble Benedict"
+              width="110" height="140"
+              loading="lazy"
+            />
+          </picture>
+          <div>
+            <h3>Moble Benedict, Ph.D.</h3>
+            <p class="profile-role">Professor, Aerospace Engineering</p>
+            <p class="profile-affiliation">Texas A&amp;M University</p>
+            <p class="profile-expertise">Rotorcraft autonomy, VTOL aeromechanics, micro air vehicles, eVTOL powertrains, experimental flight dynamics, bio-inspired flight</p>
+            <p class="profile-links">
+              <a class="inline-link" href="https://avfl.engr.tamu.edu" target="_blank" rel="noopener" aria-label="Moble Benedict — external profile (opens in new tab)">Profile</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="profile-card-compact">
+          <picture>
+            <source srcset="assets/images/team/daniel-selva.webp" type="image/webp" />
+            <img
+              src="assets/images/team/daniel-selva.jpg"
+              alt="Daniel Selva"
+              width="110" height="140"
+              loading="lazy"
+            />
+          </picture>
+          <div>
+            <h3>Daniel Selva, Ph.D.</h3>
+            <p class="profile-role">Associate Professor, Aerospace Engineering</p>
+            <p class="profile-affiliation">Texas A&amp;M University</p>
+            <p class="profile-expertise">Space system autonomy, AI for systems architecture, human-agent collaboration, small satellite constellations, Earth observation missions</p>
+            <p class="profile-links">
+              <a class="inline-link" href="https://www.selva-research.com" target="_blank" rel="noopener" aria-label="Daniel Selva — external profile (opens in new tab)">Profile</a>
             </p>
           </div>
         </article>
@@ -150,9 +226,7 @@
       </section>
     </main>
 
-    <footer>
-      <p><span class="darwin-brand">D³ARWIN</span> &middot; Texas A&amp;M University</p>
-    </footer>
-    <script src="assets/js/ui-effects.js"></script>
+    <div data-include="assets/partials/footer.html"></div>
+    <script src="assets/js/ui-effects.js?v=2"></script>
   </body>
 </html>

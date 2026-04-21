@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#030507" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23061226'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%236fe8ff' font-family='sans-serif' font-weight='700'>D</text></svg>" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%276%27%20fill%3D%27%23061226%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2723%27%20font-size%3D%2720%27%20text-anchor%3D%27middle%27%20fill%3D%27%236fe8ff%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27700%27%3ED%3C%2Ftext%3E%3C%2Fsvg%3E" />
     <title>D³ARWIN</title>
     <meta
       name="description"
       content="D³ARWIN: Dynamic Data-Driven Adaptive Reasoning With Inference Networks. A distributed multiscale decision engine for real-time edge intelligence under uncertainty."
     />
+    <link rel="canonical" href="https://d3arwin.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D³ARWIN" />
+    <meta property="og:url" content="https://d3arwin.github.io/" />
+    <meta property="og:title" content="D³ARWIN — Distributed Reasoning Agents for Real-Time Decisions" />
+    <meta property="og:description" content="An AI operating system for certifiable aerospace autonomy: rigorous inference, robust estimation, and multiscale reasoning for real-time decisions at the edge." />
+    <meta property="og:image" content="https://d3arwin.github.io/assets/images/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="D³ARWIN — Dynamic Data-Driven Adaptive Reasoning With Inference Networks" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="D³ARWIN — Distributed Reasoning Agents for Real-Time Decisions" />
+    <meta name="twitter:description" content="An AI operating system for certifiable aerospace autonomy, developed at Texas A&amp;M University." />
+    <meta name="twitter:image" content="https://d3arwin.github.io/assets/images/og-preview.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -26,7 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200&display=block"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=8" />
   </head>
   <body>
     <div class="aurora aurora-left"></div>
@@ -43,6 +57,8 @@
       <div class="nav-menu">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="research.html">Research</a>
+        <a class="nav-link" href="flight-tests.html">Flight Tests</a>
+        <a class="nav-link" href="publications.html">Publications</a>
         <a class="nav-link" href="about.html">About</a>
       </div>
     </nav>
@@ -65,7 +81,7 @@
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="mesh-frame">
-          <svg class="hero-diagram" viewBox="0 0 760 760" role="img" aria-label="Graph neural network architecture with uncertainty distributions on graph edges">
+          <svg class="hero-diagram" viewBox="40 120 680 560" role="img" aria-label="Graph neural network architecture with uncertainty distributions on graph edges">
             <defs>
               <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
                 <feGaussianBlur stdDeviation="8" result="blur" />
@@ -97,16 +113,16 @@
             <rect x="300" y="228" width="160" height="292" rx="30" fill="url(#panelGlow)" stroke="rgba(111, 232, 255, 0.22)" />
             <rect x="532" y="176" width="154" height="388" rx="28" fill="url(#panelGlow)" stroke="rgba(125, 176, 255, 0.18)" />
 
-            <g fill="#7cf8d3" font-family="Space Grotesk, sans-serif" font-size="9.8" letter-spacing="1.4">
+            <g fill="#7cf8d3" font-family="Space Grotesk, sans-serif" font-size="12" letter-spacing="1.4">
               <text x="153" y="180" text-anchor="middle">SUBSYSTEM NODES</text>
               <text x="380" y="254" text-anchor="middle">INFERENCE CORE</text>
               <text x="609" y="200" text-anchor="middle">READOUT / DECISION</text>
             </g>
 
-            <g fill="#8fb2e3" font-family="Space Grotesk, sans-serif" font-size="7.8">
-              <text x="153" y="190" text-anchor="middle">uncertain graph inputs</text>
-              <text x="380" y="268" text-anchor="middle">latent fusion, uncertainty shaping</text>
-              <text x="609" y="214" text-anchor="middle">belief and control outputs</text>
+            <g fill="#8fb2e3" font-family="Space Grotesk, sans-serif" font-size="9.5">
+              <text x="153" y="196" text-anchor="middle">uncertain graph inputs</text>
+              <text x="380" y="274" text-anchor="middle">latent fusion, uncertainty shaping</text>
+              <text x="609" y="220" text-anchor="middle">belief and control outputs</text>
             </g>
 
             <g fill="none" stroke="rgba(145, 168, 210, 0.3)" stroke-width="1.8" stroke-linecap="round">
@@ -127,35 +143,35 @@
             </g>
 
             <g fill="#0f1928" stroke="rgba(111, 232, 255, 0.35)" stroke-width="1.6">
-              <circle cx="124" cy="256" r="12" />
-              <circle cx="174" cy="218" r="12" />
-              <circle cx="196" cy="290" r="12" />
-              <circle cx="136" cy="324" r="12" />
+              <circle cx="124" cy="256" r="14" />
+              <circle cx="174" cy="218" r="14" />
+              <circle cx="196" cy="290" r="14" />
+              <circle cx="136" cy="324" r="14" />
 
-              <circle cx="118" cy="408" r="12" />
-              <circle cx="174" cy="370" r="12" />
-              <circle cx="212" cy="420" r="12" />
-              <circle cx="160" cy="470" r="12" />
+              <circle cx="118" cy="408" r="14" />
+              <circle cx="174" cy="370" r="14" />
+              <circle cx="212" cy="420" r="14" />
+              <circle cx="160" cy="470" r="14" />
 
-              <circle cx="128" cy="548" r="12" />
-              <circle cx="186" cy="516" r="12" />
-              <circle cx="210" cy="576" r="12" />
-              <circle cx="156" cy="602" r="12" />
+              <circle cx="128" cy="548" r="14" />
+              <circle cx="186" cy="516" r="14" />
+              <circle cx="210" cy="576" r="14" />
+              <circle cx="156" cy="602" r="14" />
             </g>
 
-            <g fill="#eef5ff" font-family="Space Grotesk, sans-serif" font-size="8.5">
-              <text x="124" y="260" text-anchor="middle">GP</text>
-              <text x="174" y="222" text-anchor="middle">GP</text>
-              <text x="196" y="294" text-anchor="middle">GP</text>
-              <text x="136" y="328" text-anchor="middle">GP</text>
-              <text x="118" y="412" text-anchor="middle">GP</text>
-              <text x="174" y="374" text-anchor="middle">GP</text>
-              <text x="212" y="424" text-anchor="middle">GP</text>
-              <text x="160" y="474" text-anchor="middle">GP</text>
-              <text x="128" y="552" text-anchor="middle">GP</text>
-              <text x="186" y="520" text-anchor="middle">GP</text>
-              <text x="210" y="580" text-anchor="middle">GP</text>
-              <text x="156" y="606" text-anchor="middle">GP</text>
+            <g fill="#eef5ff" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="500">
+              <text x="124" y="261" text-anchor="middle">GP</text>
+              <text x="174" y="223" text-anchor="middle">GP</text>
+              <text x="196" y="295" text-anchor="middle">GP</text>
+              <text x="136" y="329" text-anchor="middle">GP</text>
+              <text x="118" y="413" text-anchor="middle">GP</text>
+              <text x="174" y="375" text-anchor="middle">GP</text>
+              <text x="212" y="425" text-anchor="middle">GP</text>
+              <text x="160" y="475" text-anchor="middle">GP</text>
+              <text x="128" y="553" text-anchor="middle">GP</text>
+              <text x="186" y="521" text-anchor="middle">GP</text>
+              <text x="210" y="581" text-anchor="middle">GP</text>
+              <text x="156" y="607" text-anchor="middle">GP</text>
             </g>
 
             <g>
@@ -228,10 +244,10 @@
               <rect x="590" y="482" width="44" height="40" rx="12" />
             </g>
 
-            <g fill="#eef5ff" font-family="Space Grotesk, sans-serif" font-size="7.8">
-              <text x="612" y="256" text-anchor="middle">risk</text>
-              <text x="612" y="382" text-anchor="middle">policy</text>
-              <text x="612" y="506" text-anchor="middle">control</text>
+            <g fill="#eef5ff" font-family="Space Grotesk, sans-serif" font-size="10.5">
+              <text x="612" y="257" text-anchor="middle">risk</text>
+              <text x="612" y="383" text-anchor="middle">policy</text>
+              <text x="612" y="507" text-anchor="middle">control</text>
             </g>
 
             <g fill="rgba(111, 232, 255, 0.96)" filter="url(#softGlow)">
@@ -274,33 +290,38 @@
         </p>
       </section>
 
-      <div class="portal-grid">
-        <a class="portal-card" href="research.html">
-          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">biotech</span>
-          <p class="section-kicker">Program</p>
-          <h3>Research</h3>
-          <p>Technical architecture, core innovations, and operational thrusts behind <span class="darwin-brand">D³ARWIN</span>.</p>
-        </a>
-        <a class="portal-card" href="about.html">
-          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">group</span>
-          <p class="section-kicker">People</p>
-          <h3>Team</h3>
-          <p>Faculty investigators from aerospace and mechanical engineering at Texas A&amp;M University.</p>
-        </a>
-      </div>
-
-      <section class="panel manifesto">
-        <div class="manifesto-line">
-          <span>Certifiable autonomy</span>
-          <span>Multiscale assimilation</span>
-          <span>Edge-resident decisions</span>
+      <section class="panel research-preview">
+        <div class="research-preview-header">
+          <div>
+            <p class="section-kicker">From the program</p>
+            <h2>Core innovations</h2>
+          </div>
+          <a class="research-preview-all" href="research.html">All six innovations <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="preview-grid">
+          <a class="preview-card preview-card--cyan" href="research.html">
+            <span class="material-symbols-rounded panel-symbol" aria-hidden="true">hub</span>
+            <p class="section-kicker">Situational Awareness</p>
+            <h3>GP-Finite State Machine</h3>
+            <p>A graph of Gaussian processes that tracks operational state and regime transitions under partial observability.</p>
+          </a>
+          <a class="preview-card preview-card--lavender" href="research.html">
+            <span class="material-symbols-rounded panel-symbol" aria-hidden="true">query_stats</span>
+            <p class="section-kicker">Uncertainty Quantification</p>
+            <h3>Bayesian-Agentic UQ</h3>
+            <p>An autonomous agent allocates compute by weighing prediction error against confidence bounds and latency.</p>
+          </a>
+          <a class="preview-card preview-card--teal" href="research.html">
+            <span class="material-symbols-rounded panel-symbol" aria-hidden="true">psychology</span>
+            <p class="section-kicker">Decision Synthesis</p>
+            <h3>Uncertainty-Aware Planning</h3>
+            <p>Solver-agnostic guidance that re-plans against live confidence bounds as GP posteriors update mid-mission.</p>
+          </a>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p><span class="darwin-brand">D³ARWIN</span> &middot; Texas A&amp;M University</p>
-    </footer>
-    <script src="assets/js/ui-effects.js"></script>
+    <div data-include="assets/partials/footer.html"></div>
+    <script src="assets/js/ui-effects.js?v=2"></script>
   </body>
 </html>

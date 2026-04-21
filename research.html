@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#030507" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23061226'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%236fe8ff' font-family='sans-serif' font-weight='700'>D</text></svg>" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%276%27%20fill%3D%27%23061226%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2723%27%20font-size%3D%2720%27%20text-anchor%3D%27middle%27%20fill%3D%27%236fe8ff%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27700%27%3ED%3C%2Ftext%3E%3C%2Fsvg%3E" />
     <title>Research | D³ARWIN</title>
     <meta
       name="description"
       content="D³ARWIN research: multiscale inference, cooperative reasoning agents, real-time edge decision-making under uncertainty."
     />
+    <link rel="canonical" href="https://d3arwin.github.io/research.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D³ARWIN" />
+    <meta property="og:url" content="https://d3arwin.github.io/research.html" />
+    <meta property="og:title" content="Research | D³ARWIN" />
+    <meta property="og:description" content="Technical architecture, core innovations, and operational thrusts: uncertainty-aware inference and decision-making for aerospace autonomy." />
+    <meta property="og:image" content="https://d3arwin.github.io/assets/images/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="D³ARWIN — Dynamic Data-Driven Adaptive Reasoning With Inference Networks" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Research | D³ARWIN" />
+    <meta name="twitter:description" content="Technical architecture and core innovations of the D³ARWIN program at Texas A&amp;M University." />
+    <meta name="twitter:image" content="https://d3arwin.github.io/assets/images/og-preview.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -26,7 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200&display=block"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=8" />
   </head>
   <body>
     <div class="aurora aurora-left"></div>
@@ -44,11 +58,30 @@
       <div class="nav-menu">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="research.html">Research</a>
+        <a class="nav-link" href="flight-tests.html">Flight Tests</a>
+        <a class="nav-link" href="publications.html">Publications</a>
         <a class="nav-link" href="about.html">About</a>
       </div>
     </nav>
 
     <header class="page-hero">
+      <svg class="page-hero-mark" viewBox="0 0 220 24" aria-hidden="true" focusable="false">
+        <g stroke="rgba(116, 246, 255, 0.38)" stroke-width="1" fill="none" stroke-linecap="round">
+          <path d="M12 12 L52 12" />
+          <path d="M52 12 L92 12" />
+          <path d="M92 12 L132 12" />
+          <path d="M132 12 L172 12" />
+          <path d="M172 12 L208 12" />
+        </g>
+        <g fill="rgba(116, 246, 255, 0.9)">
+          <circle cx="12" cy="12" r="2.6" />
+          <circle cx="52" cy="12" r="2.4" />
+          <circle cx="92" cy="12" r="3.2" />
+          <circle cx="132" cy="12" r="2.4" />
+          <circle cx="172" cy="12" r="2.4" />
+          <circle cx="208" cy="12" r="2.6" />
+        </g>
+      </svg>
       <p class="badge">Research</p>
       <h1>Research Program</h1>
       <p class="lede">
@@ -62,11 +95,11 @@
       <section class="panel research-product">
         <div class="product-layout">
           <div>
-            <p class="section-kicker">Research Product</p>
-            <h2><span class="darwin-brand">D<sup>3</sup>ARWIN</span></h2>
-            <p class="product-expansion">Dynamic Data-Driven Adaptive Reasoning With Inference Networks</p>
+            <p class="section-kicker">Framework Overview</p>
+            <h2>Closed-Loop Decision Engine</h2>
+            <p class="product-expansion">D³ARWIN · Dynamic Data-Driven Adaptive Reasoning With Inference Networks</p>
             <p>
-              The project is motivated by the need for dependable, distributed
+              <span class="darwin-brand">D³ARWIN</span> is motivated by the need for dependable, distributed
               decision intelligence when sensing, models, and compute are all imperfect.
               It organizes uncertainty-aware inference and coordination into a unified
               workflow so edge systems can maintain reliable performance under shift,
@@ -100,7 +133,7 @@
               <g transform="translate(300,300)">
                 <path d="M86,-6.9 L49,-71 Q45,-77.9 37,-77.9 L-37,-77.9 Q-45,-77.9 -49,-71 L-86,-6.9 Q-90,0 -86,6.9 L-49,71 Q-45,77.9 -37,77.9 L37,77.9 Q45,77.9 49,71 L86,6.9 Q90,0 86,-6.9 Z"
                       fill="rgba(116, 246, 255, 0.12)" stroke="rgba(116, 246, 255, 0.6)" stroke-width="1.4" />
-                <text y="-10" text-anchor="middle" fill="rgba(116, 246, 255, 0.8)" font-family="Chakra Petch, sans-serif" font-size="22" font-weight="600" letter-spacing="0.06em">D&#179;ARWIN</text>
+                <text y="-10" text-anchor="middle" fill="rgba(116, 246, 255, 0.8)" font-family="Chakra Petch, sans-serif" font-size="22" font-weight="600" letter-spacing="0.06em">D³ARWIN</text>
                 <text y="16" text-anchor="middle" fill="rgba(234,245,255,0.4)" font-family="Space Grotesk, sans-serif" font-size="12" letter-spacing="0.08em">CORE ENGINE</text>
               </g>
 
@@ -170,7 +203,7 @@
       </section>
 
       <h2 class="section-heading">Core Technical Innovations</h2>
-      <p style="color:var(--text-soft); margin: -0.5rem 0 1rem; max-width: 72ch;">
+      <p class="section-intro">
         Six interlocking advances form the computational backbone of
         <span class="darwin-brand">D³ARWIN</span>. Each solves a distinct operational bottleneck; together they close the loop
         from raw sensor data to certifiable, uncertainty-aware decisions at the edge.
@@ -178,42 +211,42 @@
 
       <div class="grid">
 
-        <article class="card">
+        <article class="card card--cyan">
           <span class="material-symbols-rounded panel-symbol">hub</span>
           <p class="section-kicker">Situational Awareness</p>
           <h3>GP-Finite State Machine</h3>
           <p>Maps the full mission option space as a graph of Gaussian processes. As sensor data streams in, the system tracks which operational state the vehicle is in, what it can transition to, and how confident it should be, even when the environment is only partially observable.</p>
         </article>
 
-        <article class="card">
+        <article class="card card--mint">
           <span class="material-symbols-rounded panel-symbol">schema</span>
           <p class="section-kicker">Physics-Informed Surrogates</p>
           <h3>Networked Deep Gaussian Processes</h3>
           <p>Chains physics-grounded GP components (aero, structures, propulsion, flight dynamics) into a single surrogate network. Uncertainty flows through coupling interfaces automatically, so every downstream prediction carries a calibrated confidence bound without bolting on a separate error model.</p>
         </article>
 
-        <article class="card">
+        <article class="card card--sky">
           <span class="material-symbols-rounded panel-symbol">sync_alt</span>
           <p class="section-kicker">Real-Time State Estimation</p>
           <h3>Data Assimilation on Graphs</h3>
           <p>Performs Bayesian fusion over the graph-structured surrogate network, conditioning GP posteriors on live sensor data and propagating updated beliefs across nodes. Graph signal processing methods accelerate the propagation step, avoiding full matrix inversions at scale while preserving calibrated uncertainty throughout the network.</p>
         </article>
 
-        <article class="card">
+        <article class="card card--amber">
           <span class="material-symbols-rounded panel-symbol">tune</span>
           <p class="section-kicker">Adaptive Runtime Fidelity</p>
           <h3>Dialable-Fidelity Digital Twin</h3>
           <p>Lets the system dial between high-fidelity offline analysis and low-latency onboard prediction through certified link-reduction approximations. Each reduced mode is validated against the full reference model with conservative uncertainty adjustments, preserving a traceable fidelity chain for certification.</p>
         </article>
 
-        <article class="card">
+        <article class="card card--lavender">
           <span class="material-symbols-rounded panel-symbol">query_stats</span>
           <p class="section-kicker">Uncertainty Quantification</p>
           <h3>Bayesian-Agentic UQ Framework</h3>
           <p>Treats model refinement as a resource allocation problem. An autonomous agent decides where to spend compute by weighing prediction error against confidence bounds and latency, distinguishing what the model does not know from what is inherently noisy, and refining only where it moves the needle operationally.</p>
         </article>
 
-        <article class="card">
+        <article class="card card--teal">
           <span class="material-symbols-rounded panel-symbol">psychology</span>
           <p class="section-kicker">Guidance &amp; Decision Synthesis</p>
           <h3>Uncertainty-Aware Planning &amp; Control</h3>
@@ -224,9 +257,7 @@
 
     </main>
 
-    <footer>
-      <p><span class="darwin-brand">D³ARWIN</span> &middot; Texas A&amp;M University</p>
-    </footer>
-    <script src="assets/js/ui-effects.js"></script>
+    <div data-include="assets/partials/footer.html"></div>
+    <script src="assets/js/ui-effects.js?v=2"></script>
   </body>
 </html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030507" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%276%27%20fill%3D%27%23061226%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2723%27%20font-size%3D%2720%27%20text-anchor%3D%27middle%27%20fill%3D%27%236fe8ff%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27700%27%3ED%3C%2Ftext%3E%3C%2Fsvg%3E" />
+    <title>Flight Tests | D³ARWIN</title>
+    <meta
+      name="description"
+      content="Flight-test infrastructure for the D³ARWIN program at Texas A&M University: instrumented airframes, hardware-in-the-loop benches, and captive-carry trials supporting verification and validation of onboard algorithms."
+    />
+    <link rel="canonical" href="https://d3arwin.github.io/flight-tests.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D³ARWIN" />
+    <meta property="og:url" content="https://d3arwin.github.io/flight-tests.html" />
+    <meta property="og:title" content="Flight Tests | D³ARWIN" />
+    <meta property="og:description" content="Instrumented airframes, hardware-in-the-loop benches, and captive-carry trials supporting verification and validation of D³ARWIN onboard algorithms." />
+    <meta property="og:image" content="https://d3arwin.github.io/assets/images/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="D³ARWIN — Dynamic Data-Driven Adaptive Reasoning With Inference Networks" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flight Tests | D³ARWIN" />
+    <meta name="twitter:description" content="Flight-test platforms and test activities supporting V&amp;V of D³ARWIN algorithms." />
+    <meta name="twitter:image" content="https://d3arwin.github.io/assets/images/og-preview.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet" media="print" onload="this.media='all'"
+    />
+    <noscript><link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    /></noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200&display=block"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=18" />
+  </head>
+  <body>
+    <div class="aurora aurora-left"></div>
+    <div class="aurora aurora-right"></div>
+    <div class="grain"></div>
+
+    <nav class="top-nav" aria-label="Primary">
+      <a class="nav-brand" href="index.html">
+        <span class="material-symbols-rounded nav-brand-icon">deployed_code</span>
+        <span class="nav-brand-copy">
+          <span class="nav-brand-title">D³ARWIN</span>
+          <span class="nav-brand-subtitle">DYNAMIC DATA-DRIVEN ADAPTIVE REASONING WITH INFERENCE NETWORKS</span>
+        </span>
+      </a>
+      <div class="nav-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="research.html">Research</a>
+        <a class="nav-link" href="flight-tests.html">Flight Tests</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+        <a class="nav-link" href="about.html">About</a>
+      </div>
+    </nav>
+
+    <header class="page-hero">
+      <svg class="page-hero-mark" viewBox="0 0 220 24" aria-hidden="true" focusable="false">
+        <g stroke="rgba(116, 246, 255, 0.38)" stroke-width="1" fill="none" stroke-linecap="round">
+          <path d="M12 12 L52 12" />
+          <path d="M52 12 L92 12" />
+          <path d="M92 12 L132 12" />
+          <path d="M132 12 L172 12" />
+          <path d="M172 12 L208 12" />
+        </g>
+        <g fill="rgba(116, 246, 255, 0.9)">
+          <circle cx="12" cy="12" r="2.6" />
+          <circle cx="52" cy="12" r="2.4" />
+          <circle cx="92" cy="12" r="3.2" />
+          <circle cx="132" cy="12" r="2.4" />
+          <circle cx="172" cy="12" r="2.4" />
+          <circle cx="208" cy="12" r="2.6" />
+        </g>
+      </svg>
+      <p class="badge">Flight Tests</p>
+      <h1>Flight Test Capability</h1>
+      <p class="lede">
+        Flight-test infrastructure at Texas A&amp;M University supports verification and validation
+        of algorithms developed within the <span class="darwin-brand">D³ARWIN</span> framework.
+        The Vehicle Systems &amp; Control Laboratory (VSCL) and Advanced Vertical Flight Laboratory
+        (AVFL) contribute instrumented fixed-wing, small-UAS, and rotorcraft platforms,
+        a pilot-in-the-loop flight simulator, and a dedicated UAS flight-testing facility on
+        the RELLIS campus.
+      </p>
+    </header>
+
+    <main>
+      <section class="panel flight-test-panel">
+        <div class="flight-test-body">
+          <p class="section-kicker">Overview</p>
+          <h2>Verification and validation sequence</h2>
+          <p>
+            Candidate algorithms progress through a staged verification sequence:
+            software-in-the-loop (SIL) simulation; pilot-in-the-loop nonlinear six-DOF
+            simulation on the VSCL Engineering Flight Simulator; captive-carry
+            instrumented trials on VSCL and AVFL airframes; and closed-loop autonomous
+            operation under safety-monitor supervision. Test procedures, data acquisition
+            configurations, and post-flight analyses are documented for independent review.
+          </p>
+          <p class="flight-test-meta">
+            <span class="material-symbols-rounded" aria-hidden="true">flight</span>
+            Instrumented airframes · pilot-in-the-loop simulation · flight telemetry
+          </p>
+        </div>
+      </section>
+
+      <h2 class="section-heading">Platforms</h2>
+      <p class="section-intro">Instrumented test articles operated by the affiliated laboratories.</p>
+      <div class="grid grid-2">
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/pegasus.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/pegasus.jpg" alt="VSCL Pegasus UAS fixed-wing aircraft" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">flight</span>
+          <p class="section-kicker">VSCL · Fixed-wing</p>
+          <h3>Pegasus UAS</h3>
+          <p>12 ft wingspan; MTOW 108 lbf with 30 lbf payload; 90 kt maximum and 26 kt stall; endurance over one hour. Fuselage accepts a 12U half-rack bay for flight-test instrumentation. Designed and patented by VSCL.</p>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/anaconda.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/anaconda.jpg" alt="VSCL Anaconda small UAS in field configuration" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">flight</span>
+          <p class="section-kicker">VSCL · Small UAS</p>
+          <h3>Anaconda UAS</h3>
+          <p>54 in wingspan; configurable from 5.5 to 12 lbf takeoff weight; endurance of 40 to 60 minutes. Operated with hyperspectral, DSLR, and multispectral payload variants.</p>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/gofly-fullscale.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/gofly-fullscale.jpg" alt="AVFL GoFly full-scale personal air vehicle" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">mode_of_travel</span>
+          <p class="section-kicker">AVFL · GoFly · Full-scale</p>
+          <h3>Personal Air Vehicle</h3>
+          <p>All-electric coaxial rotorcraft developed for the Boeing GoFly Prize. 750 lb gross weight with 200 lb payload; 8.2 ft rotor diameter; 11 kWh / 600 V air-cooled battery driving 55 HP motors; measured 73 dBA at 50 ft during takeoff.</p>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/gofly-aria.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/gofly-aria.jpg" alt="AVFL GoFly one-third-scale flight demonstrator" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">mode_of_travel</span>
+          <p class="section-kicker">AVFL · GoFly · Phase III</p>
+          <h3>One-third-scale demonstrator</h3>
+          <p>22 lb prototype flown during the GoFly Prize Phase III competition in February 2020. Uses the coaxial rotor and fly-by-wire control architecture of the full-scale vehicle. Phase I (2018) and Phase II (2019) prize-winning team.</p>
+        </article>
+      </div>
+
+      <h2 class="section-heading">Facilities</h2>
+      <p class="section-intro">Dedicated infrastructure supporting pilot-in-the-loop simulation and outdoor UAS flight testing.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/efs.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/efs.jpg" alt="VSCL Engineering Flight Simulator with pilot station" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">desktop_windows</span>
+          <p class="section-kicker">VSCL · Simulator</p>
+          <h3>Engineering Flight Simulator</h3>
+          <p>Real-time nonlinear six-DOF pilot-in-the-loop fixed-base simulator. 150° field-of-view projection at 30 Hz. Cockpit based on a surplus T-37 airframe with YF-16 sidestick and glass-cockpit instrumentation. Nine quad-core compute nodes support four concurrent operator stations and three UAS interfaces.</p>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/rellis-hangar.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/rellis-hangar.jpg" alt="RELLIS campus hangar interior" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">warehouse</span>
+          <p class="section-kicker">VSCL · Hangar &amp; fab</p>
+          <h3>RELLIS hangar and fabrication shops</h3>
+          <p>12,000 ft² hangar with preflight briefing room and real-time weather display. On-site fabrication shops for metal, wood, and composite builds. Located on the TAMUS RELLIS campus, seven miles northwest of the main campus.</p>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/rellis-aerial.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/rellis-aerial.jpg" alt="Aerial view of the RELLIS Campus" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">explore</span>
+          <p class="section-kicker">TAMUS · RELLIS Campus</p>
+          <h3>RELLIS Campus flight operations</h3>
+          <p>15,000+ acres of controlled-access land including a 1,300-acre Proving Grounds. Five full-scale runways support crewed, uncrewed, wheeled, and tracked platforms. A dedicated FAA-approved BVLOS corridor spans more than 12 miles. Authorized under FAA Part 107 and multiple Part 91 Certificates of Authorization. On-site instrumentation includes PTZ and thermal cameras, radar, GPS-RTK reference, and weather and visibility sensors.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/bcdc-ipg-aerial.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/bcdc-ipg-aerial.jpg" alt="Aerial view of the BCDC Innovation Proving Grounds at RELLIS" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">landscape</span>
+          <p class="section-kicker">BCDC · Innovation Proving Grounds</p>
+          <h3>Innovation Proving Grounds</h3>
+          <p>Instrumented outdoor autonomy testing complex at the Bush Combat Development Complex on the RELLIS Campus. Includes the Mobility Challenge Course, an Off-Road Test Area with reconfigurable urban container village and terrain features, and sensor infrastructure for distributed test operations. Supports crewed and uncrewed ground and air platforms across representative mission conditions.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/bcdc-ric.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/bcdc-ric.jpg" alt="Research Integration Center at the Bush Combat Development Complex" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">location_off</span>
+          <p class="section-kicker">BCDC · IPG · Subterranean</p>
+          <h3>Subterranean autonomy testbed</h3>
+          <p>600 ft of 48-inch-diameter subterranean tunnels at the BCDC Innovation Proving Grounds, adjacent to the Research Integration Center on the RELLIS Campus. Includes a heavily shielded Faraday-cage section, an industrial wind generator, and a 90 ft flood-capable segment. Supports UAS and UGV autonomy testing under GPS-denied conditions: inertial and visual navigation, simultaneous localization and mapping (SLAM), and multi-agent coordination.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/bcdc-mote.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/bcdc-mote.jpg" alt="Annotated BCDC demonstration: Jeep Cherokee, HDT WOLF UGV, and Grazer A UAV collaboratively tracking targets off-road" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">diversity_3</span>
+          <p class="section-kicker">BCDC · Air-Ground Teamed Autonomy</p>
+          <h3>Air-ground teamed autonomy</h3>
+          <p>Cooperative multi-platform autonomy demonstrations at the BCDC Innovation Proving Grounds. Mixed operations team instrumented ground vehicles (Clearpath Moose, HDT WOLF) with aerial systems (Grazer A) for target tracking, handoff, and shared situational awareness in off-road conditions.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media card-media--contain">
+            <picture>
+              <source srcset="assets/images/flight-tests/rellis-map.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/rellis-map.jpg" alt="Map of the Lonestar UAS Test Site network across Texas" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">map</span>
+          <p class="section-kicker">TAMU-CC · Autonomy Research Institute</p>
+          <h3>FAA UAS Test Site · Texas</h3>
+          <p>Texas A&amp;M-Corpus Christi operates one of the original FAA-designated UAS Test Sites (certified June 2014 as the Lone Star UAS Center of Excellence &amp; Innovation; redesignated the Autonomy Research Institute in 2024). Eleven ranges span more than 6,000 square miles of proposed airspace from the Gulf Coast to Big Bend, with over 5,500 research flights conducted.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <picture>
+              <source srcset="assets/images/flight-tests/fortworth.webp" type="image/webp" />
+              <img src="assets/images/flight-tests/fortworth.jpg" alt="Aerial rendering of the Texas A&M-Fort Worth campus" loading="lazy" />
+            </picture>
+          </div>
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">apartment</span>
+          <p class="section-kicker">TAMU-Fort Worth · Advanced Aviation</p>
+          <h3>Center for Advanced Aviation Technologies</h3>
+          <p>Authorized by the FAA Reauthorization Act of 2024, with its laboratory component anchored at the Texas A&amp;M-Fort Worth campus (opening Fall 2026). Research scope includes uncrewed systems, advanced air mobility, and supersonic and hypersonic aircraft. Hypersonics research led by Associate Dean for Research Ivett Leyva; operational test airspace coordinated through the Autonomy Research Institute.</p>
+        </article>
+      </div>
+
+    </main>
+
+    <div data-include="assets/partials/footer.html"></div>
+    <script src="assets/js/ui-effects.js?v=2"></script>
+  </body>
+</html>
